@@ -5,7 +5,7 @@ import A_Beginning.B_Primitives.PrimitiveTypes;
 import A_Beginning.C_Chars.Chars;
 import A_Beginning.D_Strings.Strings;
 
-public class Main {
+public class BeginningMain {
 
 	public static void main(String[] args) {
 
