@@ -1,9 +1,9 @@
 package Beginning;
 
-import Beginning.Variables.Variables;
-import Beginning.Chars.Chars;
-import Beginning.Primitives.PrimitiveTypes;
-import Beginning.Strings.Strings;
+import Beginning.A_Variables.Variables;
+import Beginning.B_Primitives.PrimitiveTypes;
+import Beginning.C_Chars.Chars;
+import Beginning.D_Strings.Strings;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package Beginning.Chars;
+package Beginning.C_Chars;
 
 public class Chars {
 
