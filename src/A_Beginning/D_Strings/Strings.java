@@ -1,4 +1,4 @@
-package Beginning.D_Strings;
+package A_Beginning.D_Strings;
 
 public class Strings {
 	

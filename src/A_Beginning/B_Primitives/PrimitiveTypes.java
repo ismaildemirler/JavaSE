@@ -1,4 +1,4 @@
-package Beginning.B_Primitives;
+package A_Beginning.B_Primitives;
 
 public class PrimitiveTypes {
 	

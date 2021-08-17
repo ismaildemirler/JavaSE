@@ -1,4 +1,4 @@
-package Beginning.A_Variables;
+package A_Beginning.A_Variables;
 
 public class Variables {
 
