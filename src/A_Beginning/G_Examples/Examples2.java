@@ -2,7 +2,7 @@ package A_Beginning.G_Examples;
 
 import java.util.Scanner;
 
-public class Examples {
+public class Examples2 {
 	
 	public void FindMaximumNumber() {
 

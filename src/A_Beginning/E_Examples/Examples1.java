@@ -1,6 +1,6 @@
 package A_Beginning.E_Examples;
 
-public class Examples {
+public class Examples1 {
 	
 	public void BodyIndex() {
 
