@@ -9,6 +9,7 @@ import A_Beginning.F_Operators.Operators;
 import A_Beginning.G_Conditions.Conditions;
 import A_Beginning.G_Examples.Examples2;
 import A_Beginning.H_Loops.Loops;
+import A_Beginning.I_Examples.Examples3;
 
 public class BeginningMain {
 
@@ -56,5 +57,10 @@ public class BeginningMain {
 //		loops.WhileLoops();
 //		loops.DoWhileLoops();
 //		loops.BreakAndContinue();
+		
+		Examples3 examples3 = new Examples3();
+//		examples3.ATMProgram();
+//		examples3.ArmstrongNumber();
+		examples3.Login();
 	}
 }
