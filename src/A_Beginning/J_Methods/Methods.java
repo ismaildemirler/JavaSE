@@ -16,9 +16,9 @@ public class Methods {
 		 */
 		
 		/*
-		 * 		Method Signature: Every method has a method signature. It is a part of the method declaration. 
+		 * 	    Method Signature: Every method has a method signature. It is a part of the method declaration. 
 		   						  It includes the method name and parameter list.
-		 * 		Access Specifier: Access specifier or modifier is the access type of the method. 
+		 * 	    Access Specifier: Access specifier or modifier is the access type of the method. 
 		   	                      It specifies the visibility of the method. Java provides four types of access specifier:
 		   	 		Public   : The method is accessible by all classes when we use public specifier in our application.
 					Private  : When we use a private access specifier, the method is accessible only in the classes in which it is defined.
