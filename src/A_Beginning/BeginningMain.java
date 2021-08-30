@@ -11,6 +11,7 @@ import A_Beginning.G_Examples.Examples2;
 import A_Beginning.H_Loops.Loops;
 import A_Beginning.I_Examples.Examples3;
 import A_Beginning.J_Methods.Methods;
+import A_Beginning.K_Examples.Examples4;
 
 public class BeginningMain {
 
@@ -68,5 +69,9 @@ public class BeginningMain {
 //		methods.beginningToMethods();
 //		methods.returningFromMethods();
 //		methods.MethodOverloading();
+		
+		Examples4 examples4 = new Examples4();
+		examples4.findPrimeNumbers();
+		examples4.getGCMOfTwoNumbers();
 	}
 }
