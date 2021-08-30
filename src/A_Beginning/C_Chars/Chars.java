@@ -5,10 +5,7 @@ public class Chars {
 	public void charType() {
 
 		/*
-		 * 
-		 * char data type is used to demonstrate letters. char datatype is 2 bytes - 16
-		 * bits
-		 * 
+		 * char data type is used to demonstrate letters. char datatype is 2 bytes - 16 bits
 		 */
 		char character1 = 'A';
 		char character2 = '?';

@@ -64,9 +64,9 @@ public class BeginningMain {
 //		examples3.armstrongNumber();
 //		examples3.login();
 		
-		Methods methods = new Methods();
+//		Methods methods = new Methods();
 //		methods.beginningToMethods();
 //		methods.returningFromMethods();
-		methods.MethodOverloading();
+//		methods.MethodOverloading();
 	}
 }
