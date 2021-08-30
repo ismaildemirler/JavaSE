@@ -65,6 +65,8 @@ public class BeginningMain {
 //		examples3.login();
 		
 		Methods methods = new Methods();
-		methods.beginningToMethods();
+//		methods.beginningToMethods();
+//		methods.returningFromMethods();
+		methods.MethodOverloading();
 	}
 }
