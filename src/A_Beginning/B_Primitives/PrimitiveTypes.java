@@ -2,7 +2,7 @@ package A_Beginning.B_Primitives;
 
 public class PrimitiveTypes {
 	
-	public void IntegralNumbers() {
+	public void integralNumbers() {
 		
 		/*
 		 * PRIMITIVE TYPES
@@ -55,7 +55,7 @@ public class PrimitiveTypes {
         System.out.println("Type Conversion Result = " + lNumber);
 	}
 
-	public void DecimalNumbers() {
+	public void decimalNumbers() {
 		
 		/*
 		 * Float - reserves 32 bits - 4 bytes place

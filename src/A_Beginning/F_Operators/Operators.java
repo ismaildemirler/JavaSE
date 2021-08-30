@@ -2,7 +2,7 @@ package A_Beginning.F_Operators;
 
 public class Operators {
 
-	public void MathematicalOperators() {
+	public void mathematicalOperators() {
 
 		// Mathematical Operators in Java
 
@@ -90,7 +90,7 @@ public class Operators {
 		System.out.println("**************************************");
 	}
 
-	public void OtherMathematicalAsistantOperators() {
+	public void otherMathematicalAsistantOperators() {
 
 		// Mathematical Asistant Operators in Java
 
@@ -148,7 +148,7 @@ public class Operators {
 
 	}
 
-	public void ComparingOperators() {
+	public void comparingOperators() {
 
 		// Comparing Operators in Java
 
@@ -290,7 +290,7 @@ public class Operators {
 		System.out.println("**************************************");
 	}
 
-	public void LogicalOperators() {
+	public void logicalOperators() {
 
 		// Logical Operators in Java
 

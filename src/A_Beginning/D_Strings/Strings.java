@@ -2,7 +2,7 @@ package A_Beginning.D_Strings;
 
 public class Strings {
 	
-	public void StringType() {
+	public void stringType() {
 
 		/*
 		 * 
@@ -71,7 +71,7 @@ public class Strings {
 		System.out.println("New Line String = " + newLineString);
 	}
 
-	public void StringMethods() {
+	public void stringMethods() {
 
 		String exampleWord = "I Am Learning Java.";
 

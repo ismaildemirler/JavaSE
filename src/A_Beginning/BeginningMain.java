@@ -10,57 +10,61 @@ import A_Beginning.G_Conditions.Conditions;
 import A_Beginning.G_Examples.Examples2;
 import A_Beginning.H_Loops.Loops;
 import A_Beginning.I_Examples.Examples3;
+import A_Beginning.J_Methods.Methods;
 
 public class BeginningMain {
 
 	public static void main(String[] args) {
 
 //		Variables variables = new Variables();
-//		variables.BeginningToVariables();
+//		variables.beginningToVariables();
 //		
 //		PrimitiveTypes primitiveTypes = new PrimitiveTypes();
-//		primitiveTypes.IntegralNumbers();
-//		primitiveTypes.DecimalNumbers();
+//		primitiveTypes.integralNumbers();
+//		primitiveTypes.decimalNumbers();
 //		
 //		Chars chars = new Chars();
-//		chars.CharType();
-//		chars.BooleanType();
+//		chars.charType();
+//		chars.booleanType();
 //		
 //		Strings strings = new Strings();
-//		strings.StringType();
-//		strings.StringMethods();
+//		strings.stringType();
+//		strings.stringMethods();
 //		
 //		Examples1 examples1 = new Examples1();
-//		examples1.BodyIndex();
-//		examples1.CalculateCostByMile();
-//		examples1.SwapValuesOfTwoVariables();
-//		examples1.FindHypotenuseOfRightTriangle();
+//		examples1.bodyIndex();
+//		examples1.calculateCostByMile();
+//		examples1.swapValuesOfTwoVariables();
+//		examples1.findHypotenuseOfRightTriangle();
 //		
 //		Operators operators = new Operators();
-//		operators.MathematicalOperators();
-//		operators.OtherMathematicalAsistantOperators();
-//		operators.ComparingOperators();
-//		operators.LogicalOperators();
+//		operators.mathematicalOperators();
+//		operators.otherMathematicalAsistantOperators();
+//		operators.comparingOperators();
+//		operators.logicalOperators();
 //		
 //		Conditions conditions = new Conditions();
-//		conditions.IfElseBlocks();
-//		conditions.SwitchCaseBlocks();
+//		conditions.ifElseBlocks();
+//		conditions.switchCaseBlocks();
 //
 //		Examples2 examples2 = new Examples2();
-//		examples2.BodyIndexConditionally();
-//		examples2.GradeCalculation();
-//		examples2.SimpleCalculator();
-//		examples2.FindMaximumNumber();
+//		examples2.bodyIndexConditionally();
+//		examples2.gradeCalculation();
+//		examples2.simpleCalculator();
+//		examples2.findMaximumNumber();
 		
 //		Loops loops = new Loops();
-//		loops.ForLoops();
-//		loops.WhileLoops();
-//		loops.DoWhileLoops();
-//		loops.BreakAndContinue();
+//		loops.forLoops();
+//		loops.whileLoops();
+//		loops.doWhileLoops();
+//		loops.breakAndContinue();
 		
-		Examples3 examples3 = new Examples3();
-//		examples3.ATMProgram();
-//		examples3.ArmstrongNumber();
-		examples3.Login();
+//		Examples3 examples3 = new Examples3();
+//		examples3.atmProgram();
+//		examples3.armstrongNumber();
+//		examples3.login();
+		
+		Methods methods = new Methods();
+		methods.beginningToMethods();
 	}
 }

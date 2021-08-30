@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Examples2 {
 	
-	public void FindMaximumNumber() {
+	public void findMaximumNumber() {
 
 		/*
 		 * Finding maximum number of three numbers.
@@ -33,7 +33,7 @@ public class Examples2 {
 
 	}
 
-	public void BodyIndexConditionally() {
+	public void bodyIndexConditionally() {
 
 		/*
 		 * This algorithm calculates body index by using height and weight of a person. 
@@ -57,7 +57,7 @@ public class Examples2 {
 		System.out.println("**************************************");
 	}
 
-	public void SimpleCalculator() {
+	public void simpleCalculator() {
 
 		/*
 		 * Simple Calculator Program
@@ -101,7 +101,7 @@ public class Examples2 {
 		System.out.println("**************************************");
 	}
 
-	public void GradeCalculation() {
+	public void gradeCalculation() {
 
 		/*
 		 * Simple Grade Calculation Program

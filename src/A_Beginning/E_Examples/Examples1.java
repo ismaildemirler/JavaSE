@@ -2,7 +2,7 @@ package A_Beginning.E_Examples;
 
 public class Examples1 {
 	
-	public void BodyIndex() {
+	public void bodyIndex() {
 
 		/*
 		 * Body Index Program
@@ -19,7 +19,7 @@ public class Examples1 {
 		System.out.println("Body Index = " + bodyIndex);
 	}
 
-	public void CalculateCostByMile() {
+	public void calculateCostByMile() {
 
 		/*
 		 * This algorithm calculates the cost according to miles that car went away.
@@ -32,7 +32,7 @@ public class Examples1 {
 
 	}
 
-	public void SwapValuesOfTwoVariables() {
+	public void swapValuesOfTwoVariables() {
 
 		/*
 		 * This algorithm swaps values of two variables.
@@ -72,7 +72,7 @@ public class Examples1 {
 		System.out.println("Second Number = " + secondNumber);
 	}
 
-	public void FindHypotenuseOfRightTriangle() {
+	public void findHypotenuseOfRightTriangle() {
 
 		/*
 		 * This algorithm calculates the Hypotenuse of right triangle

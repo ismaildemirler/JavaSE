@@ -2,7 +2,7 @@ package A_Beginning.G_Conditions;
 
 public class Conditions {
 
-	public void IfElseBlocks() {
+	public void ifElseBlocks() {
 
 		/*
 		 * If-Else In Java
@@ -89,7 +89,7 @@ public class Conditions {
 		System.out.println("**************************************");
 	}
 
-	public void SwitchCaseBlocks() {
+	public void switchCaseBlocks() {
 
 		/*
 		 * Switch-Case In Java

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Loops {
 
-	public void ForLoops() {
+	public void forLoops() {
 
 		/*
 		 * For Loops
@@ -99,7 +99,7 @@ public class Loops {
 
 	}
 
-	public void WhileLoops() {
+	public void whileLoops() {
 		
 		/*
 		 * While Loops
@@ -140,7 +140,7 @@ public class Loops {
 		System.out.println("*******************");
 	}
 
-	public void DoWhileLoops() {
+	public void doWhileLoops() {
 		
 		/*
 		 * Do-While Loop
@@ -195,7 +195,7 @@ public class Loops {
 		System.out.println("*******************");
 	}
 
-	public void BreakAndContinue() {
+	public void breakAndContinue() {
 		
 		/*
 		 * Break And Continue Keywords in Java

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Examples3 {
 	
-	public void ATMProgram() {
+	public void atmProgram() {
 		
 		/*
 		 * ATM Example in Java
@@ -50,7 +50,7 @@ public class Examples3 {
 		}
 	}
 
-	public void ArmstrongNumber() {
+	public void armstrongNumber() {
 		
 		/*
 		 * Armstrong Number in Java
@@ -100,7 +100,7 @@ public class Examples3 {
 		}
 	} 
 
-	public void Login() {
+	public void login() {
 		
 		/*
 		 * Login Example

@@ -2,7 +2,7 @@ package A_Beginning.C_Chars;
 
 public class Chars {
 
-	public void CharType() {
+	public void charType() {
 
 		/*
 		 * 
@@ -22,7 +22,7 @@ public class Chars {
 		System.out.println("Unicode Character = " + character6);
 	}
 
-	public void BooleanType() {
+	public void booleanType() {
 
 		/*
 		 * It is used for conditions. It can be just false or true.

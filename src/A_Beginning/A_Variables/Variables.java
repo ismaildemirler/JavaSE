@@ -2,7 +2,7 @@ package A_Beginning.A_Variables;
 
 public class Variables {
 
-	public void BeginningToVariables() {
+	public void beginningToVariables() {
 		
 		//		To create a variable, we need to define variable type first. For ex: int, char, etc...
         //		And we can give a name to variable for ex: counter
