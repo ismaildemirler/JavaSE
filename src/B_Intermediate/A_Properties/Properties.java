@@ -52,7 +52,8 @@ public class Properties {
 		UserApplication userApplication2 = new UserApplication();
 		userApplication2.setAge(-20);
 		userApplication2.setAge(20);
-		System.out.println("The age is : " + userApplication2.getAge());
+		int age = userApplication2.getAge();
+		System.out.println("The age is : " + age);
 
 		System.out.println("**************************************");
 	}
