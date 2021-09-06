@@ -1,10 +1,33 @@
-package B_Intermediate.A_Properties;
+package B_Intermediate.A_OOP.A_Properties;
 
 public class Properties {
 	
 	/*
 	 * Object Oriented Programming in Java
+	 * 
+	 * OOPS Concepts In Java
+	   OOPs concepts in Java is known as object-oriented programming System. The following is a list of the OOPs concepts in Java:
+		1. Class
+		2. Object
+		3. Inheritance
+		4. Polymorphism
+		5. Abstraction
+		6. Encapsulation
+		----- Also -----
+		7. Coupling
+		8. Cohesion
+		9. Association
+		10.Aggregation
+		11.Composition
+	 * 
+	 * Properties in Java
 	 */
+	
+	 /*
+	  * Objects are always called as instances of a class. 
+	  * Objects are created from class in java or any other languages. 
+	  * Objects are those that have state and behavior.
+	  */
 	
 	/*
 	 * When we say Object Oriented Programming we try to mean modeling our world into programming world.
@@ -15,11 +38,20 @@ public class Properties {
 	 */
 	
 	/*
-	 * Classes in programming world is like factories in real world. In factories a product has some certain features and methods.
+	 * Classes are like object constructors for creating objects. 
+	 * Classes in programming world is like factories in real world. 
+	 * In factories a product has some certain features and methods.
 	 * When product has been created in the factory, features and methods of product have been defined and assigned to that product.
 	 * So in the programming world when the class object of an object has been defined, the features and methods have been defined and 
 	 * assigned to that class. When we create an instance of that class, like a factory, that object has been produced and owns
 	 * all of the features and methods always.
+	 * 
+	 * A class declaration consists of:
+		Modifiers:Can be public or default access.
+		Class name: Initial letter.
+		Superclass: A class can only extend (subclass) one parent.
+		Interfaces: A class can implement more than one interface.
+		Body: Body surrounded by braces, { }.
 	 */
 	
 	public void PropertiesOfClassObjects() {

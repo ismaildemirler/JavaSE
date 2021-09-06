@@ -1,4 +1,4 @@
-package B_Intermediate.A_Properties;
+package B_Intermediate.A_OOP.A_Properties;
 
 public class UserApplication {
 	

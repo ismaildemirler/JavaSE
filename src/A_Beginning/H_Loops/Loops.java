@@ -7,7 +7,7 @@ public class Loops {
 	public void forLoops() {
 
 		/*
-		 * For Loops
+		 * For Loops in Java
 		 */
 
 		/*

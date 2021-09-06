@@ -1,6 +1,10 @@
-package B_Intermediate.B_Constructors;
+package B_Intermediate.A_OOP.B_Constructors;
 
 public class Constructors {
+	
+	/*
+	 * Constructors in Java
+	 */
 	
 	/*
 	 * A constructor in Java is a special method that is used to initialize objects. 
@@ -13,7 +17,7 @@ public class Constructors {
 	/*
 	 * Note that the constructor name must match the class name, and it cannot have a return type (like void). 
 	 * A Java constructor cannot be abstract, static, final, and synchronized
-	 * A Java class can have multiple constructor meyhods by using method overloading.
+	 * A Java class can have multiple constructor methods by using method overloading.
 	 * Also note that the constructor is called when the object is created. 
 	 * All classes have constructors by default: if you do not create a class constructor yourself, 
 	 * Java creates one for you. However, then you are not able to set initial values for object attributes.
