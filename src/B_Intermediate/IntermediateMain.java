@@ -6,7 +6,7 @@ import B_Intermediate.A_OOP.C_Inheritance.Inheritance;
 import B_Intermediate.A_OOP.D_Polymorphism.Polymorphism;
 import B_Intermediate.A_OOP.E_Abstraction.Abstraction;
 import B_Intermediate.A_OOP.F_Encapsulation.Encapsulation;
-import B_Intermediate.D_Compositions.Compositions;
+import B_Intermediate.A_OOP.K_Compositions.Compositions;
 
 public class IntermediateMain {
 
