@@ -5,6 +5,7 @@ import B_Intermediate.A_OOP.B_Constructors.Constructors;
 import B_Intermediate.A_OOP.C_Inheritance.Inheritance;
 import B_Intermediate.A_OOP.D_Polymorphism.Polymorphism;
 import B_Intermediate.A_OOP.E_Abstraction.Abstraction;
+import B_Intermediate.A_OOP.F_Encapsulation.Encapsulation;
 import B_Intermediate.D_Compositions.Compositions;
 
 public class IntermediateMain {
@@ -24,9 +25,13 @@ public class IntermediateMain {
 //		polymorphism.runtimePolymorphismExample();
 //		polymorphism.instanceofKeyword();
 		
-		Abstraction abstraction = new Abstraction();
+//		Abstraction abstraction = new Abstraction();
 //		abstraction.abstractionExampleWithAbstractClasses();
 //		abstraction.abstractionExampleWithInterfaces();
+		
+		Encapsulation encapsulation = new Encapsulation();
+		encapsulation.notEncapsulatedExample();
+		encapsulation.encapsulatedExample();
 		
 //		Compositions compositions = new Compositions();
 //		compositions.compositionExample();
