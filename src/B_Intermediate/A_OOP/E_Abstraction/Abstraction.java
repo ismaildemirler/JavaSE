@@ -26,6 +26,8 @@ public class Abstraction {
 	 * way, it shows only essential things to the user and hides the internal
 	 * details, for example, sending SMS where you type the text and send the
 	 * message. You don't know the internal processing about the message delivery.
+	 * Also abstraction is used to get loosely coupled class and tiers. 
+	 * We will cover this in Coupling subject. 
 	 */
 
 	/*
