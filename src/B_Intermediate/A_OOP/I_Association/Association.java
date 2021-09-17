@@ -23,13 +23,13 @@ public class Association {
 	 * of the building blocks and the most basic concept of object-oriented
 	 * programming. Association is a connection or relation between two separate
 	 * classes that are set up through their objects. Association relationship
-	 * indicates how objects know each other and how they are using each other�s
+	 * indicates how objects know each other and how they are using each other's
 	 * functionality. It can be one-to-one, one-to-many, many-to-one and
 	 * many-to-many.
 	 */
 
 	/*
-	 * - For example, a person can have only one passport. That is a �one-to-one�
+	 * - For example, a person can have only one passport. That is a one-to-one
 	 * relationship. - If we talk about the association between a Bank and Employee,
 	 * a bank can have many employees, So it is a one-to-many relationship. -
 	 * Similarly, every city exists in exactly one state, but a state can have many
