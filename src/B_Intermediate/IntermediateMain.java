@@ -8,7 +8,9 @@ import B_Intermediate.A_OOP.E_Abstraction.Abstraction;
 import B_Intermediate.A_OOP.F_Encapsulation.Encapsulation;
 import B_Intermediate.A_OOP.G_Coupling.Coupling;
 import B_Intermediate.A_OOP.H_Cohesion.Cohesion;
-import B_Intermediate.A_OOP.K_Compositions.Compositions;
+import B_Intermediate.A_OOP.I_Association.Association;
+import B_Intermediate.A_OOP.J_Aggregation.Aggregation;
+import B_Intermediate.A_OOP.K_Composition.Composition;
 
 public class IntermediateMain {
 
@@ -43,7 +45,16 @@ public class IntermediateMain {
 //		cohesion.lowCohesiveExample();
 //		cohesion.highCohesiveExample();
 		
-//		Compositions compositions = new Compositions();
-//		compositions.compositionExample();		
+//		Association association = new Association();
+//		association.oneToOneAssociationExample();
+//		association.oneToManyAssociationExample();
+//		association.manyToOneAssociationExample();
+//		association.manyToManyAssociationExample();
+		
+//		Aggregation aggregation = new Aggregation();
+//		aggregation.aggregationExample();
+		
+//		Composition composition = new Composition();
+//		composition.compositionExample();		
 	}
 }
