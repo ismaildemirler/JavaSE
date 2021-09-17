@@ -10,7 +10,7 @@ public class Aggregation {
 	 */
 	
 	/*
-	 * Aggregation is also a �has-a� relationship. Aggregation is a weak association 
+	 * Aggregation is also a 'has-a' relationship. Aggregation is a weak association 
 	 * What distinguishes it from composition, that it doesn't involve owning. As a result, 
 	 * the lifecycles of the objects aren't tied: every one of them can exist independently of each other. 
 	 * For example, a car and its wheels. We can take off the wheels, and they'll still exist. 
@@ -20,7 +20,7 @@ public class Aggregation {
        - It represents the Has-A relationship.
        - It is a unidirectional association i.e. a one way relationship. 
          For example, department can have students but vice versa is not possible and thus unidirectional in nature.
-       - Ending one entity won�t affect another, both can be present independently.
+       - Ending one entity won't affect another, both can be present independently.
 	 */
 	
 	public void aggregationExample() {

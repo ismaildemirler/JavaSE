@@ -15,7 +15,7 @@ import B_Intermediate.A_OOP.I_Association.OneToOneAssociation.Passport;
 public class Association {
 
 	/*
-	 * Association Subject
+	 * Association in Java
 	 */
 
 	/*
