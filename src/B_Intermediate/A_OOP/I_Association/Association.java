@@ -31,19 +31,19 @@ public class Association {
 	/*
 	 * - For example, a person can have only one passport. That is a �one-to-one�
 	 * relationship. - If we talk about the association between a Bank and Employee,
-	 * a bank can have many employees, So it is a �one-to-many� relationship. -
+	 * a bank can have many employees, So it is a one-to-many relationship. -
 	 * Similarly, every city exists in exactly one state, but a state can have many
-	 * cities, which is a �many-to-one� relationship. - Lastly, if we talk about the
+	 * cities, which is a many-to-one relationship. - Lastly, if we talk about the
 	 * association between a teacher and a student, multiple students can be
 	 * associated with a single teacher and a single student can also be associated
 	 * with multiple teachers but both can be created or deleted independently. This
-	 * is a �many-to-many� relationship.
+	 * is a many-to-many relationship.
 	 */
 
 	/*
-	 * Association is the weakest relationship between the three. It isn't a �has-a�
+	 * Association is the weakest relationship between the three. It isn't a 'has-a'
 	 * relationship, none of the objects are parts or members of another.
-	 * Association only means that the objects �know� each other. For example, a
+	 * Association only means that the objects know each other. For example, a
 	 * mother and her child.
 	 */
 	
@@ -55,7 +55,7 @@ public class Association {
 	   	 a. Aggregation: In Java, the Aggregation association defines the HAS-A relationship. 
 	   	    Aggregation follows the one-to-one or one-way relationship. 
 	   	    If two entities are in the aggregation composition, and one entity fails due to some error, 
-	   	    it will not affect the other entity. Let�s take the example of a mobile phone and a battery. 
+	   	    it will not affect the other entity. Let's take the example of a mobile phone and a battery. 
 	   	    A single battery can belong to a mobile phone, but if the mobile phone stops working, 
 	   	    and we delete it from our database. The phone battery will not be deleted because 
 	   	    it may still be functional. So in aggregation, while there is ownership, objects have their own lifecycle.
