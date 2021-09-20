@@ -12,6 +12,7 @@ import B_Intermediate.A_OOP.I_Association.Association;
 import B_Intermediate.A_OOP.J_Aggregation.Aggregation;
 import B_Intermediate.A_OOP.K_Composition.Composition;
 import B_Intermediate.B_ArraysAndLists.A_Arrays.ArrayClass;
+import B_Intermediate.B_ArraysAndLists.B_ArrayLists.ArrayListClass;
 
 public class IntermediateMain {
 
@@ -58,8 +59,15 @@ public class IntermediateMain {
 //		Composition composition = new Composition();
 //		composition.compositionExample();		
 		
-		ArrayClass arrays = new ArrayClass();
-		arrays.oneDimensionalArrays();
-		arrays.multipleDimensionalArrays();
+//		ArrayClass arrays = new ArrayClass();
+//		arrays.oneDimensionalArrays();
+//		arrays.multipleDimensionalArrays();
+//		arrays.foreachLoop();
+//		arrays.classObjectsForArrays();
+//		arrays.cloningOfArrays();
+		
+		ArrayListClass arrayList = new ArrayListClass();
+		arrayList.beginningToArrayList();
+		arrayList.moreMothodsOfArrayList();
 	}
 }

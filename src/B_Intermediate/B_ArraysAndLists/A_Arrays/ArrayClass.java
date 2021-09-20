@@ -47,7 +47,12 @@ public class ArrayClass {
 		 * curly braces:
 		 */
 
-		int[] numbers = { 10, 5, 7, 11, 20 };
+		int[] numbers1 = { 10, 5, 7, 11, 20 };
+		
+		/*
+		 * Also, Arrays can be declared like below:
+		 */
+		int numbers2[]  = { 10, 5, 7, 11, 20 };
 
 		/*
 		 * So far, we have declared int arrays. But Arrays can hold multiple double
@@ -205,10 +210,163 @@ public class ArrayClass {
 		} else {
 			System.out.println("Array7 and array8 are not equal");
 		}
+		System.out.println("***********************************");
 	}
 
 	public void multipleDimensionalArrays() {
 		
+		/*
+		 * Multidimensional arrays are arrays of arrays with each element of the array holding the reference of other array. 
+		 * These are also known as Jagged Arrays. A multidimensional array is created by appending one set of square brackets ([]) per dimension. 
+		 * Examples:
+		 */
+		int[][] int2DArray = new int[2][2]; //a 2D array or matrix
+		int[][][] int3DArray = new int[10][20][10]; //a 3D array
+		
+		/*
+		 * Giving value to first row and first column of the array.
+		 * We can populate the array like below after initialization.
+		 */
+		int2DArray[0][0] = 25; 
+		int2DArray[0][1] = 15; 
+		int2DArray[1][0] = 30; 
+		int2DArray[1][1] = 40; 
+		
+		/*
+		 * Or we can give initial values to array once we created.
+		 */
+		int[][] arr = {{ 1, 32 }, { 4, 5 }};
+		System.out.println("First row second column value of the array " + arr[0][1]);
+		System.out.println("***********************************");
+		
+		/*
+		 * How to populate two dimensional array which has big length:
+		 */
+		int[][] populatedArray = new int[3][4];
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 4; j++) {
+				populatedArray[i][j] = j * i + j + i;
+			}
+		}
+		
+		/*
+		 * How to get values of the items of two dimensional array:
+		 */		
+		System.out.println("Values of the items: ");
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 4; j++) {
+				System.out.print(populatedArray[i][j] + " ");
+			}
+			System.out.println("");
+		}
+		System.out.println("***********************************");
+	}
+	
+	public void foreachLoop() {
+		
+		/*
+		 * In arrays, to get access items of the array we have iterative alternative way beside for loop.
+		 * This is foreach loop. This is an efective way to get access items of arrays.
+		 */		
+		String[] companies = { "Microsoft", "Amazon", "Facebook", "Google" };
+		System.out.println("Companies: " );
+		for (String company : companies ) {
+			System.out.println(company);
+		}
+		System.out.println("***********************************");
+		
+		/*
+		 * We can define an object array which is a class like below. Our array is list of student objects.
+		 */		
+		Student student1 = new Student("Student1");
+		Student student2 = new Student("Student2");
+		Student student3 = new Student("Student3");
+		Student[] students = { student1, student2, student3 };
+		
+		System.out.println("Students: " );
+		for(Student student: students) {
+			System.out.println(student.getName());
+		}
+		System.out.println("***********************************");
+	}
+	
+	public void classObjectsForArrays() {
+		
+		int intArray[] = new int[3];
+        byte byteArray[] = new byte[3];
+        short shortsArray[] = new short[3];
+          
+        // Array of Strings
+        String[] strArray = new String[3];
+          
+        System.out.println(intArray.getClass());
+        System.out.println(intArray.getClass().getSuperclass());
+        System.out.println(byteArray.getClass());
+        System.out.println(shortsArray.getClass());
+        System.out.println(strArray.getClass());
+		System.out.println("***********************************");
+        
+        /*
+         * Explanation :
+
+		   - The string “[I” is the run-time type signature for the class object “array with component type int“.
+           - The only direct superclass of any array type is java.lang.Object.
+           - The string “[B” is the run-time type signature for the class object “array with component type byte“.
+           - The string “[S” is the run-time type signature for the class object “array with component type short“.
+           - The string “[L” is the run-time type signature for the class object “array with component type of a Class”. 
+             The Class name is then followed.
+         */
+        
+        /*
+         * Now as we know that arrays are object of a class and direct superclass of arrays is class Object.
+         * The members of an array type are all of the following:
+
+           - The public final field length, which contains the number of components of the array length may be positive or zero.
+           - All the members inherited from class Object; the only method of Object that is not inherited is its clone method.
+           - The public method clone(), which overrides clone method in class Object and throws no checked exceptions.
+         */        
+	}
+	
+	public void cloningOfArrays() {
+		
+		/*
+         * When we clone a single dimensional array, such as Object[], a “deep copy” is performed with 
+         * the new array containing copies of the original array’s elements as opposed to references.
+         */
+        
+        int int1DArray[] = {1,2,3};
+        
+        int clone1DArray[] = int1DArray.clone();
+          
+        // will print false as deep copy is created
+        // for one-dimensional array
+        System.out.println(int1DArray == clone1DArray);
+          
+        for (int i = 0; i < clone1DArray.length; i++) {
+            System.out.print(clone1DArray[i]+" ");
+        }
+
+		System.out.println("");
+		System.out.println("***********************************");
+		
+		/*
+		 * A clone of a multi-dimensional array (like Object[][]) is a “shallow copy” however, 
+		 * which is to say that it creates only a single new array with each element array 
+		 * a reference to an original element array, but subarrays are shared.
+		 */
+		int int2DArray[][] = {{1,2,3},{4,5}};
+        
+        int clone2DArray[][] = int2DArray.clone();
+          
+        // will print false
+        System.out.println(int2DArray == clone2DArray);
+          
+        // will print true as shallow copy is created
+        // i.e. sub-arrays are shared
+        System.out.println(int2DArray[0] == clone2DArray[0]);
+        System.out.println(int2DArray[1] == clone2DArray[1]);
+        
+		System.out.println("***********************************");
 	}
 	
 	private void printArray(String[] incomingArrayParameter) {

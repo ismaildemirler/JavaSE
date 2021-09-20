@@ -87,6 +87,22 @@ public class Conditions {
 			System.out.println("You failed!");
 		}
 		System.out.println("**************************************");
+		
+		/*
+		 * We can use if-else condition in short alternative:
+		 */
+		String sentence1 = 3 < 4 ? "3 is smaller than 4" : "3 is bigger than 4";
+		System.out.println(sentence1);
+		System.out.println("**************************************");
+		
+		String sentence2 = 5 < 4 ? "5 is smaller than 4" : "5 is bigger than 4";
+		System.out.println(sentence2);
+		
+		/*
+		 * Above examples we use a condition without if word, and we ask if it is true by using '?' mark.
+		 * If it is true we get first statement next. Instead of writing else we use ':' and we get second statement
+		 * if the condition is not true. This is the short way of if-else condition.
+		 */
 	}
 
 	public void switchCaseBlocks() {
