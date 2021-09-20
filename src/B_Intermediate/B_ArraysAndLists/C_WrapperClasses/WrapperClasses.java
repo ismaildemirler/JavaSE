@@ -144,13 +144,16 @@ public class WrapperClasses {
 		integerList3.add(4);		
 	    
 		int sum = 0;
-	    for (Integer i: integerList3) {
+	    
+		for (Integer i: integerList3) {
 	        if (i % 2 == 0)
 	            sum += i;           //Integer to int
 	    }
-	    System.out.println("Total number after unboxing: " + sum);
 	    
-	    /*
+		System.out.println("Total number after unboxing: " + sum);
+	    
+	    
+		/*
 	     * In above example, the remainder (%) and unary plus (+=) operators does not apply on Integer objects. 
 	     * The compiler automatically converts an Integer to an int at runtime by invoking the intValue() method. 
 	     * Autoboxing and unboxing lets developers write cleaner code, make it easier to read.
