@@ -11,6 +11,7 @@ import B_Intermediate.A_OOP.H_Cohesion.Cohesion;
 import B_Intermediate.A_OOP.I_Association.Association;
 import B_Intermediate.A_OOP.J_Aggregation.Aggregation;
 import B_Intermediate.A_OOP.K_Composition.Composition;
+import B_Intermediate.B_ArraysAndLists.A_Arrays.ArrayClass;
 
 public class IntermediateMain {
 
@@ -56,5 +57,9 @@ public class IntermediateMain {
 		
 //		Composition composition = new Composition();
 //		composition.compositionExample();		
+		
+		ArrayClass arrays = new ArrayClass();
+		arrays.oneDimensionalArrays();
+		arrays.multipleDimensionalArrays();
 	}
 }
