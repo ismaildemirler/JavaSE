@@ -142,7 +142,8 @@ public class WrapperClasses {
 		integerList3.add(20);
 		integerList3.add(5);
 		integerList3.add(4);		
-	    int sum = 0;
+	    
+		int sum = 0;
 	    for (Integer i: integerList3) {
 	        if (i % 2 == 0)
 	            sum += i;           //Integer to int
