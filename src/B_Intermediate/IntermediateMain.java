@@ -14,6 +14,7 @@ import B_Intermediate.A_OOP.K_Composition.Composition;
 import B_Intermediate.B_ArraysAndLists.A_Arrays.ArrayClass;
 import B_Intermediate.B_ArraysAndLists.B_ArrayLists.ArrayListClass;
 import B_Intermediate.B_ArraysAndLists.C_WrapperClasses.WrapperClasses;
+import B_Intermediate.B_ArraysAndLists.D_LinkedLists.LinkedListClass;
 
 public class IntermediateMain {
 
@@ -73,5 +74,11 @@ public class IntermediateMain {
 		
 //		WrapperClasses wrapperClasses = new WrapperClasses();
 //		wrapperClasses.autoboxingUnboxing();
+		
+//		LinkedListClass linkedList = new LinkedListClass();
+//		linkedList.beginningToLinkedLists();
+//		linkedList.methodsOfLinkedList();
+		
+		
 	}
 }

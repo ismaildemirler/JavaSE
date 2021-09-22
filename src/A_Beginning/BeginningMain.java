@@ -31,6 +31,7 @@ public class BeginningMain {
 //		Strings strings = new Strings();
 //		strings.stringType();
 //		strings.stringMethods();
+//		strings.moreDetailsAboutString();
 //		
 //		Examples1 examples1 = new Examples1();
 //		examples1.bodyIndex();
@@ -70,8 +71,8 @@ public class BeginningMain {
 //		methods.returningFromMethods();
 //		methods.MethodOverloading();
 		
-		Examples4 examples4 = new Examples4();
-		examples4.findPrimeNumbers();
-		examples4.getGCMOfTwoNumbers();
+//		Examples4 examples4 = new Examples4();
+//		examples4.findPrimeNumbers();
+//		examples4.getGCMOfTwoNumbers();
 	}
 }
