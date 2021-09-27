@@ -92,7 +92,7 @@ public class StaticKeyword {
 	 * 
 	 * Key Points to Remember:
 	   - A class can have multiple static blocks
-       - static fields and static blocks are resolved and executed in the same order as they are present in the class
+	   - static fields and static blocks are resolved and executed in the same order as they are present in the class
 	 */
 	
 	/*
