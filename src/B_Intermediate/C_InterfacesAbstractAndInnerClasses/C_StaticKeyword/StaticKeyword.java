@@ -71,15 +71,17 @@ public class StaticKeyword {
 	
 	/*
 	 * When to use static methods? 
-       - When you have code that can be shared across all instances of the same class, put that portion of code into static method.
-       - They are basically used to access static field(s) of the class.
-       - Instance method vs Static method
-
-       - Instance method can access the instance methods and instance variables directly.
-       - Instance method can access static variables and static methods directly.
-       - Static methods can access the static variables and static methods directly.
-       - Static methods can’t access instance methods and instance variables directly. 
-         They must use reference to object. And static method can’t use this keyword as there is no instance for ‘this’ to refer to.
+	   - When you have code that can be shared across all instances of the same class, put that portion of code into static method.
+	   - They are basically used to access static field(s) of the class.
+	   - Instance method vs Static method
+	 
+	 * Instance Method & Static Method
+	   - Instance method can access the instance methods and instance variables directly.
+	   - Instance method can access static variables and static methods directly.
+	   - Static methods can access the static variables and static methods directly.
+	   - Static methods can’t access instance methods and instance variables directly. 
+	     They must use reference to object. And static method can’t use this keyword 
+	     as there is no instance for ‘this’ to refer to.
 	 */
 	
 	/*
