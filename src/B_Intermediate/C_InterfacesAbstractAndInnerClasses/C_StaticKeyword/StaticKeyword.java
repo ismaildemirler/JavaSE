@@ -26,7 +26,7 @@ public class StaticKeyword {
 	 * The static variable gets memory only once in the class area at the time of class loading.
 	 * 
 	 * Advantages of static variable
-       - It makes your program memory efficient (i.e., it saves memory).
+	   - It makes your program memory efficient (i.e., it saves memory).
 	 */
 	
 	/*
@@ -59,14 +59,14 @@ public class StaticKeyword {
 	 * Key Points to Remember: 
 	   - static methods in Java are resolved at compile time. 
 	     Since method overriding is part of Runtime Polymorphism, so static methods can't be overridden
-       - abstract methods can't be static
-       - static methods cannot use this or super keywords
-       - The following combinations of the instance, class methods and variables are valid:
-             1) Instance methods can directly access both instance methods and instance variables
-             2) Instance methods can also access static variables and static methods directly
-             3) static methods can access all static variables and other static methods
-             4) static methods cannot access instance variables and instance methods directly; 
-                They need some object reference to do so.
+	   - abstract methods can't be static
+	   - static methods cannot use this or super keywords
+	   - The following combinations of the instance, class methods and variables are valid:
+		     1) Instance methods can directly access both instance methods and instance variables
+		     2) Instance methods can also access static variables and static methods directly
+		     3) static methods can access all static variables and other static methods
+		     4) static methods cannot access instance variables and instance methods directly; 
+		        They need some object reference to do so.
 	 */
 	
 	/*
