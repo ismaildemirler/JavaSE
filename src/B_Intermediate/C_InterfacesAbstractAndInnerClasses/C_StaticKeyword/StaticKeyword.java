@@ -111,9 +111,9 @@ public class StaticKeyword {
 	 * have access to all member of the enclosing class (including private), 
 	 * whereas the static nested classes only have access to static members of the outer class.
 	 * In fact, static nested classes behaved exactly like any other top-level class 
-     * but enclosed in the only class which will access it, to provide better packaging convenience.
-     * 
-     * Key Points to Remember
+	 * but enclosed in the only class which will access it, to provide better packaging convenience.
+	 * 
+	 * Key Points to Remember
 	   - static nested classes do not have access to any instance members of the enclosing outer class; 
 	     it can only access them through an object's reference
 	   - static nested classes can access all static members of the enclosing class, including private ones
