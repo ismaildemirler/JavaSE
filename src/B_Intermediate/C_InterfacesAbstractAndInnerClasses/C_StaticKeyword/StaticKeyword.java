@@ -118,7 +118,7 @@ public class StaticKeyword {
 	     it can only access them through an object's reference
 	   - static nested classes can access all static members of the enclosing class, including private ones
 	   - Java programming specification doesn't allow us to declare the top-level class as static; 
-         only classes within the classes (nested classes) can be made as static
+	     only classes within the classes (nested classes) can be made as static
 	 */
 	
 	public void staticVariable() {
