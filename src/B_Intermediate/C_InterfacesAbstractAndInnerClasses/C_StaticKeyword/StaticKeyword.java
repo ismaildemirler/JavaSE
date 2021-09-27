@@ -91,7 +91,7 @@ public class StaticKeyword {
 	 * multi-statement logic while initialization, then a static block can be used.
 	 * 
 	 * Key Points to Remember:
-       - A class can have multiple static blocks
+	   - A class can have multiple static blocks
        - static fields and static blocks are resolved and executed in the same order as they are present in the class
 	 */
 	
@@ -103,7 +103,7 @@ public class StaticKeyword {
 	 * 
 	 * The nested class architecture is divided into two:
 	   - nested classes that are declared static are called static nested classes whereas,
-       - nested classes that are non-static are called inner classes
+	   - nested classes that are non-static are called inner classes
      
      * The main difference between these two is that the inner classes 
      * have access to all member of the enclosing class (including private), 
