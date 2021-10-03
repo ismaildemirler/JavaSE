@@ -1,6 +1,6 @@
 package B_Intermediate.A_OOP.C_Inheritance;
 
-public class Inheritance {
+public class _Inheritance {
 	
 	/*
 	 * Inheritance in Java
@@ -21,7 +21,7 @@ public class Inheritance {
 	 * Super Class: The class whose features are inherited is known as superclass (or a base class or a parent class).
 	   Sub Class: The class that inherits the other class is known as a subclass (or a derived class, extended class, or child class). 
 	   		The subclass can add its own fields and methods in addition to the superclass fields and methods.
-	   Reusability: Inheritance supports the concept of “reusability”, i.e. when we want to create a new class and there is already a class 
+	   Reusability: Inheritance supports the concept of “reusability�?, i.e. when we want to create a new class and there is already a class 
 	   		that includes some of the code that we want, we can derive our new class from the existing class. 
 	   		By doing this, we are reusing the fields and methods of the existing class.
 	 */

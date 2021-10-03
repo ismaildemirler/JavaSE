@@ -3,7 +3,7 @@ package B_Intermediate.B_ArraysAndLists.A_Arrays;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class ArrayClass {
+public class _ArrayClass {
 
 	/*
 	 * Arrays in Java
@@ -309,11 +309,11 @@ public class ArrayClass {
         /*
          * Explanation :
 
-		   - The string “[I” is the run-time type signature for the class object “array with component type int“.
+		   - The string “[I�? is the run-time type signature for the class object “array with component type int“.
            - The only direct superclass of any array type is java.lang.Object.
-           - The string “[B” is the run-time type signature for the class object “array with component type byte“.
-           - The string “[S” is the run-time type signature for the class object “array with component type short“.
-           - The string “[L” is the run-time type signature for the class object “array with component type of a Class”. 
+           - The string “[B�? is the run-time type signature for the class object “array with component type byte“.
+           - The string “[S�? is the run-time type signature for the class object “array with component type short“.
+           - The string “[L�? is the run-time type signature for the class object “array with component type of a Class�?. 
              The Class name is then followed.
          */
         
@@ -330,7 +330,7 @@ public class ArrayClass {
 	public void cloningOfArrays() {
 		
 		/*
-         * When we clone a single dimensional array, such as Object[], a “deep copy” is performed with 
+         * When we clone a single dimensional array, such as Object[], a “deep copy�? is performed with 
          * the new array containing copies of the original array’s elements as opposed to references.
          */
         
@@ -350,7 +350,7 @@ public class ArrayClass {
 		System.out.println("***********************************");
 		
 		/*
-		 * A clone of a multi-dimensional array (like Object[][]) is a “shallow copy” however, 
+		 * A clone of a multi-dimensional array (like Object[][]) is a “shallow copy�? however, 
 		 * which is to say that it creates only a single new array with each element array 
 		 * a reference to an original element array, but subarrays are shared.
 		 */

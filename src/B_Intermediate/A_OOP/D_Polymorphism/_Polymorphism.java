@@ -1,6 +1,6 @@
 package B_Intermediate.A_OOP.D_Polymorphism;
 
-public class Polymorphism {
+public class _Polymorphism {
 
 	/*
 	 * Polymorphism in Java

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class GenericClasses {
+public class _GenericClasses {
 
 	/*
 	 * Generics in Java
@@ -45,18 +45,6 @@ public class GenericClasses {
 	 * Like the generic class, we can create a generic method that can accept any type of arguments. 
 	 * Here, the scope of arguments is limited to the method where it is declared. 
 	 * It allows static as well as non-static methods.
-	 */
-	
-	/*
-	 * Wildcard in Java Generics
-	 * 
-	 * The ? (question mark) symbol represents the wildcard element. 
-	 * It means any type. If we write <? extends Number>, it means any 
-	 * child class of Number, e.g., Integer, Float, and double. 
-	 * Now we can call the method of Number class through any child class object. 
-	 * We can use a wildcard as a type of a parameter, field, return type, or local variable. 
-	 * However, it is not allowed to use a wildcard as a type argument for a generic 
-	 * method invocation, a generic class instance creation, or a supertype.
 	 */
 	
 	/*
@@ -195,5 +183,22 @@ public class GenericClasses {
 		/*
 		 * Like we see in example above, We logged all type of the items by using one generic method. 
 		 */
+	}
+
+	public void wildcards() {
+		
+		/*
+		 * Wildcard in Java Generics
+		 * 
+		 * The ? (question mark) symbol represents the wildcard element. 
+		 * It means any type. If we write <? extends Number>, it means any 
+		 * child class of Number, e.g., Integer, Float, and double. 
+		 * Now we can call the method of Number class through any child class object. 
+		 * We can use a wildcard as a type of a parameter, field, return type, or local variable. 
+		 * However, it is not allowed to use a wildcard as a type argument for a generic 
+		 * method invocation, a generic class instance creation, or a supertype.
+		 */
+		
+		
 	}
 }

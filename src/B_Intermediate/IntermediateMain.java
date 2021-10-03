@@ -1,24 +1,24 @@
 package B_Intermediate;
 
 import B_Intermediate.A_OOP.A_Properties.Properties;
-import B_Intermediate.A_OOP.B_Constructors.Constructors;
-import B_Intermediate.A_OOP.C_Inheritance.Inheritance;
-import B_Intermediate.A_OOP.D_Polymorphism.Polymorphism;
-import B_Intermediate.A_OOP.E_Abstraction.Abstraction;
-import B_Intermediate.A_OOP.F_Encapsulation.Encapsulation;
-import B_Intermediate.A_OOP.G_Coupling.Coupling;
-import B_Intermediate.A_OOP.H_Cohesion.Cohesion;
-import B_Intermediate.A_OOP.I_Association.Association;
-import B_Intermediate.A_OOP.J_Aggregation.Aggregation;
-import B_Intermediate.A_OOP.K_Composition.Composition;
-import B_Intermediate.B_ArraysAndLists.A_Arrays.ArrayClass;
+import B_Intermediate.A_OOP.B_Constructors._Constructors;
+import B_Intermediate.A_OOP.C_Inheritance._Inheritance;
+import B_Intermediate.A_OOP.D_Polymorphism._Polymorphism;
+import B_Intermediate.A_OOP.E_Abstraction._Abstraction;
+import B_Intermediate.A_OOP.F_Encapsulation._Encapsulation;
+import B_Intermediate.A_OOP.G_Coupling._Coupling;
+import B_Intermediate.A_OOP.H_Cohesion._Cohesion;
+import B_Intermediate.A_OOP.I_Association._Association;
+import B_Intermediate.A_OOP.J_Aggregation._Aggregation;
+import B_Intermediate.A_OOP.K_Composition._Composition;
+import B_Intermediate.B_ArraysAndLists.A_Arrays._ArrayClass;
 import B_Intermediate.B_ArraysAndLists.B_ArrayLists.ArrayListClass;
 import B_Intermediate.B_ArraysAndLists.C_WrapperClasses.WrapperClasses;
 import B_Intermediate.B_ArraysAndLists.D_LinkedLists.LinkedListClass;
-import B_Intermediate.C_InterfacesAbstractAndInnerClasses.A_Interfaces.Interfaces;
-import B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword.StaticKeyword;
-import B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_NestedClasses.NestedClasses;
-import B_Intermediate.GenericClasses.GenericClasses;
+import B_Intermediate.C_InterfacesAbstractAndInnerClasses.A_Interfaces._Interfaces;
+import B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword._StaticKeyword;
+import B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_NestedClasses._NestedClasses;
+import B_Intermediate.GenericClasses._GenericClasses;
 
 public class IntermediateMain {
 
@@ -96,7 +96,7 @@ public class IntermediateMain {
 //		nestedClasses.localTypeInnerClass();
 //		nestedClasses.staticNestedClass();
 		
-		GenericClasses genericClasses = new GenericClasses();
+		_GenericClasses genericClasses = new _GenericClasses();
 		genericClasses.generics();
 		genericClasses.genericClasses();
 	}

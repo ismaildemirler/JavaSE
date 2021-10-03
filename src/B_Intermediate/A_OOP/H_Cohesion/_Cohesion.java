@@ -10,7 +10,7 @@ import B_Intermediate.A_OOP.H_Cohesion.LowCohesiveExample.IDatabaseOperationsL;
 import B_Intermediate.A_OOP.H_Cohesion.LowCohesiveExample.MongoDBOperationsL;
 import B_Intermediate.A_OOP.H_Cohesion.LowCohesiveExample.MySQLOperationsL;
 
-public class Cohesion {
+public class _Cohesion {
 
 	/*
 	 * Cohesion Subject

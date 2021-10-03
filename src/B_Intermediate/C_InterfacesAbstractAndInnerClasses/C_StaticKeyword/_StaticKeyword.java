@@ -1,6 +1,6 @@
 package B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword;
 
-public class StaticKeyword {
+public class _StaticKeyword {
 
 	/*
 	 * Static Keyword in Java

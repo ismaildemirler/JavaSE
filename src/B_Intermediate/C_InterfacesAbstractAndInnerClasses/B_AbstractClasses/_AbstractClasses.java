@@ -1,6 +1,6 @@
 package B_Intermediate.C_InterfacesAbstractAndInnerClasses.B_AbstractClasses;
 
-public class AbstractClasses {
+public class _AbstractClasses {
 
 	/*
 	 * Abstract Class in Java

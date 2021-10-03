@@ -1,6 +1,6 @@
 package B_Intermediate.C_InterfacesAbstractAndInnerClasses.A_Interfaces;
 
-public class Interfaces {
+public class _Interfaces {
 	
 	/*
 	 * Interface in Java	

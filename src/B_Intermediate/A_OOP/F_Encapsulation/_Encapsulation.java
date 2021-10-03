@@ -1,6 +1,6 @@
 package B_Intermediate.A_OOP.F_Encapsulation;
 
-public class Encapsulation {
+public class _Encapsulation {
 
 	/*
 	 * Encapsulation in Java

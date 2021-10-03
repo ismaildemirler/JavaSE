@@ -5,7 +5,7 @@ import B_Intermediate.A_OOP.G_Coupling.LooseCoupling.ShowMessage1;
 import B_Intermediate.A_OOP.G_Coupling.LooseCoupling.ShowMessage2;
 import B_Intermediate.A_OOP.G_Coupling.TightCoupling.DisplayMessage;
 
-public class Coupling {
+public class _Coupling {
 
 	/*
 	 * Coupling in Java

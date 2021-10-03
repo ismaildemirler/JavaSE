@@ -4,21 +4,21 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class Composition {
+public class _Composition {
 
 	/*
 	 * Composition in Java
 	 */
 	
 	/*
-	 * Composition is a “belongs-to” type of relationship. It means that one of the objects 
+	 * Composition is a “belongs-to�? type of relationship. It means that one of the objects 
 	 * is a logically larger structure, which contains the other object. In other words, 
-	 * it's part or member of the other object. Alternatively, we often call it a “has-a” relationship 
-	 * (as opposed to an “is-a” relationship, which is inheritance).
+	 * it's part or member of the other object. Alternatively, we often call it a “has-a�? relationship 
+	 * (as opposed to an “is-a�? relationship, which is inheritance).
 	 * 
 	 * For example, a room belongs to a building, or in other words a building has a room. 
-	 * So basically, whether we call it “belongs-to” or “has-a” is only a matter of point of view.
-	 * Composition is a strong kind of “has-a” relationship because the containing object owns it. 
+	 * So basically, whether we call it “belongs-to�? or “has-a�? is only a matter of point of view.
+	 * Composition is a strong kind of “has-a�? relationship because the containing object owns it. 
 	 * Therefore, the objects' lifecycles are tied. It means that if we destroy the owner object, 
 	 * its members also will be destroyed with it. For example, the room is destroyed with the building 
 	 * in our previous example. 
@@ -42,7 +42,7 @@ public class Composition {
          For example, Bank and Employee, delete the Bank and the Employee still exist. 
          Whereas Composition implies a relationship where the child cannot exist independent of the parent. 
          Example: Human and heart, heart don’t exist separate to a Human
-       - Type of Relationship: Aggregation relation is “has-a” and composition is “part-of” relation.
+       - Type of Relationship: Aggregation relation is “has-a�? and composition is “part-of�? relation.
        - Type of association: Composition is a strong Association whereas Aggregation is a weak Association.
 	 */
 	

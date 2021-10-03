@@ -1,6 +1,6 @@
 package B_Intermediate.A_OOP.B_Constructors;
 
-public class Constructors {
+public class _Constructors {
 	
 	/*
 	 * Constructors in Java

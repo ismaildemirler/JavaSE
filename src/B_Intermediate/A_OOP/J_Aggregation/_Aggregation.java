@@ -3,7 +3,7 @@ package B_Intermediate.A_OOP.J_Aggregation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Aggregation {
+public class _Aggregation {
 
 	/*
 	 * Aggregation in Java

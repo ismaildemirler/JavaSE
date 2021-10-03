@@ -5,7 +5,7 @@ import B_Intermediate.A_OOP.E_Abstraction.AbstractClasses.Informatic;
 import B_Intermediate.A_OOP.E_Abstraction.AbstractClasses.Lecturer;
 import B_Intermediate.A_OOP.E_Abstraction.AbstractClasses.Security;
 
-public class Abstraction {
+public class _Abstraction {
 
 	/*
 	 * Abstraction In Java
@@ -65,8 +65,8 @@ public class Abstraction {
 	   - Final Variables: Variables declared in a Java interface are by default final. An abstract class may contain non-final variables. 
 	   - Type of variables: Abstract class can have final, non-final, static and non-static variables. The interface has only static and final variables. 
 	   - Implementation: Abstract class can provide the implementation of the interface. Interface can’t provide the implementation of an abstract class. 
-	   - Inheritance vs Abstraction: A Java interface can be implemented using the keyword “implements” 
-	     and an abstract class can be extended using the keyword “extends”. 
+	   - Inheritance vs Abstraction: A Java interface can be implemented using the keyword “implements�? 
+	     and an abstract class can be extended using the keyword “extends�?. 
 	   - Multiple implementations: An interface can extend another Java interface only, an abstract class can extend another 
 	     Java class and implement multiple Java interfaces. 
 	   - Accessibility of Data Members: Members of a Java interface are public by default. 

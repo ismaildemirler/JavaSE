@@ -1,8 +1,6 @@
 package B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_NestedClasses;
 
-import B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_NestedClasses.MemberTypeInnerClass.Factorial;
-
-public class NestedClasses {
+public class _NestedClasses {
 	
 	/*
 	 * Java Inner Classes (Nested Classes)

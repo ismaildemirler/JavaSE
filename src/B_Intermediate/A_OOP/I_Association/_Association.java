@@ -12,7 +12,7 @@ import B_Intermediate.A_OOP.I_Association.OneToManyAssociation.Company;
 import B_Intermediate.A_OOP.I_Association.OneToManyAssociation.Employee;
 import B_Intermediate.A_OOP.I_Association.OneToOneAssociation.Passport;
 
-public class Association {
+public class _Association {
 
 	/*
 	 * Association in Java
