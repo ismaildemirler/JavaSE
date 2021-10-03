@@ -142,6 +142,7 @@ public class NestedClasses {
 		LocalTypeInnerClass localTypeInnerClass = new LocalTypeInnerClass();
 		LocalTypeInnerClass.User user = localTypeInnerClass.new User("Admin", "1234");
 		localTypeInnerClass.login(user);
+		System.out.println("**************************************");
 	}
 
 	public void staticNestedClass() {
@@ -153,6 +154,15 @@ public class NestedClasses {
 		 * The static nested class cannot access non-static (instance) data members or
 		 */
 		
+		/*
+		 * We can use non-static method which inside of static nested class like below 
+		 */
+		StaticNestedClass.Message message = new StaticNestedClass.Message();
+		message.giveMessage();
 		
+		/*
+		 * We can use static method which inside of static nested class like below 
+		 */
+		StaticNestedClass.Message.giveStaticMessage();
 	}
 }

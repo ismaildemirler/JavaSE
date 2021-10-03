@@ -3,12 +3,21 @@ package B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword;
 public class FootballerService {
 
 	private Footballer footballer;
-	public static int footballerCountInThePitch = 0;
-	public static String staticTactic = "Park The Bus";
+	public static int footballerCountInThePitch;
+	public static String staticTactic;
 	public String instanceTactic = "Park The Bus";
+	
+	static {
+		staticTactic = "Park The Bus";
+		footballerCountInThePitch = 0;
+		
+		System.out.println("Static block run");
+	}
 
 	public FootballerService(Footballer footballer) {
 		this.footballer = footballer;
+		
+		System.out.println("Constructor block run");
 	}
 	
 	public void enterThePitch() {

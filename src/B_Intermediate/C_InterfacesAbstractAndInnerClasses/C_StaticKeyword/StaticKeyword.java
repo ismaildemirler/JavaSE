@@ -123,6 +123,11 @@ public class StaticKeyword {
 	
 	public void staticVariable() {
 		
+		/*
+		 * In footballerService class we can assign value to static variables in static
+		 * block. Static block is loaded when the class is loaded. So it is executed once.
+		 */
+		
 		Footballer footballer1 = new Footballer("Cristiano Ronaldo");
 		Footballer footballer2 = new Footballer("Lionel Messi");
 		Footballer footballer3 = new Footballer("Kylian Mbappe");
