@@ -17,6 +17,7 @@ import B_Intermediate.B_ArraysAndLists.C_WrapperClasses.WrapperClasses;
 import B_Intermediate.B_ArraysAndLists.D_LinkedLists.LinkedListClass;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.A_Interfaces._Interfaces;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword._StaticKeyword;
+import B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_FinalKeyword._FinalKeyword;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.E_NestedClasses._NestedClasses;
 import B_Intermediate.D_GenericClasses._GenericClasses;
 
@@ -101,6 +102,8 @@ public class IntermediateMain {
 //		genericClasses.genericClasses();
 //		genericClasses.wildcards();
 		
-		
+		_FinalKeyword finalKeyword = new _FinalKeyword();
+		finalKeyword.finalVariables();
+		finalKeyword.finalMethods();
 	}
 }
