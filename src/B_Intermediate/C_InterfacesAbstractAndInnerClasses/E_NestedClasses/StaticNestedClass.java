@@ -1,4 +1,4 @@
-package B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_NestedClasses;
+package B_Intermediate.C_InterfacesAbstractAndInnerClasses.E_NestedClasses;
 
 public class StaticNestedClass {
 
