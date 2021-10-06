@@ -1,6 +1,7 @@
 package B_Intermediate.GenericClasses;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -199,6 +200,134 @@ public class _GenericClasses {
 		 * method invocation, a generic class instance creation, or a supertype.
 		 */
 		
+		Product product = new Product("Keyboard", "C234534523", 15.69);
+		ProductService productService = new ProductService(product);
+		product = modifyAndReturn(productService);
+		System.out.println(product);
+		System.out.println("*************************************");
 		
+		Customer customer = new Customer("John", "john@example.com", "0544433322", 22);
+		CustomerService customerService = new CustomerService(customer);
+		customer = modifyAndReturn(customerService);
+		System.out.println(customer);
+		System.out.println("*************************************");
+		
+		/*
+		 * In above example we see that we can send multiple type parameter to method and
+		 * return multiple type parameter from method using wildcard methodology.
+		 * To be able to use method which is inside of common abstract class (ManagerService)
+		 * we need to use <E extends ManagerService>. Because we need to tell E is not integer or
+		 * E is not String. We need to tell E extends from ManagerService to use modify method inside.
+		 */
+		
+		
+		/*
+		 * Upper Bounded Wildcards 
+		 * The purpose of upper bounded wildcards is to decrease the restrictions on a variable. 
+		 * It restricts the unknown type to be a specific type or a subtype of that type. 
+		 * It is used by declaring wildcard character ("?") followed by the extends (in case of, class) 
+		 * or implements (in case of, interface) keyword, followed by its upper bound.
+		 * 
+		 * Syntax:
+		 * List<? extends Number> 
+		 * 
+		 * ? is a wildcard character.
+		 * extends, is a keyword.
+		 * Number, is a class present in java.lang package
+		 * Suppose, we want to write the method for the list of Number and its subtypes (like Integer, Double). 
+		 * Using List<? extends Number> is suitable for a list of type Number or any of its subclasses 
+		 * whereas List<Number> works with the list of type Number only. So, List<? extends Number> 
+		 * is less restrictive than List<Number>.
+		 */
+		ArrayList<Integer> integerList = new ArrayList<Integer>();  
+		integerList.add(10);  
+		integerList.add(20);  
+        System.out.println("Displaying the sum of the integers = " + 
+        		upperBoundedWildcardExampleForAdding(integerList));  
+		System.out.println("*************************************");
+          
+        ArrayList<Double> doubleList = new ArrayList<Double>();  
+        doubleList.add(30.0);  
+        doubleList.add(40.0);  
+        System.out.println("Displaying the sum of the doubles = " + 
+        		upperBoundedWildcardExampleForAdding(doubleList));  
+		System.out.println("*************************************");
+		
+		
+		/*
+		 * Unbounded Wildcards
+		 * The unbounded wildcard type represents the list of an unknown type such as List<?>. 
+		 * This approach can be useful in the following scenarios: 
+           - When the given method is implemented by using the functionality provided in the Object class.
+	       - When the generic class contains the methods that don't depend on the type parameter.
+		 */
+		List<Integer> list1 = Arrays.asList(1,2,3);  
+	    System.out.println("Displaying the Integer values");  
+	    unboundedWildcardExampleForDisplaying(list1);  
+		System.out.println("*************************************");
+	    
+	    List<String> list2 = Arrays.asList("One","Two","Three");  
+	    System.out.println("displaying the String values");  
+	    unboundedWildcardExampleForDisplaying(list2);    
+		System.out.println("*************************************");
+		
+		
+		/*
+		 * Lower Bounded Wildcards
+		 * 
+		 * The purpose of lower bounded wildcards is to restrict the unknown 
+		 * type to be a specific type or a supertype of that type. It is used by 
+		 * declaring wildcard character ("?") followed by the super keyword, followed by its lower bound.
+		 * 
+		 * Syntax:
+		 * List<? super Integer> 
+		 * Here,
+		 * ? is a wildcard character.
+		 * super, is a keyword.
+		 * Integer, is a wrapper class.
+		 * 
+		 * Suppose, we want to write the method for the list of Integer and 
+		 * its supertype (like Number, Object). Using List<? super Integer> is suitable 
+		 * for a list of type Integer or any of its superclasses whereas List<Integer> 
+		 * works with the list of type Integer only. So, List<? super Integer> 
+		 * is less restrictive than List<Integer>.
+		 */
+		List<Integer> l1=Arrays.asList(1,2,3);  
+	    System.out.println("Displaying the Integer values");  
+	    lowerBoundedWildcardExampleForNumbers(l1);  
+		System.out.println("*************************************");
+	      
+	    List<Number> l2=Arrays.asList(1.0,2.0,3.0);  
+	    System.out.println("Displaying the Number values");  
+	    lowerBoundedWildcardExampleForNumbers(l2);  
+		System.out.println("*************************************");
 	}
+	
+	private <E extends ManagerService, T extends Model> T modifyAndReturn(E item) {
+		T model = (T)item.modify();
+		return model;
+	}
+	
+	private Double upperBoundedWildcardExampleForAdding(ArrayList<? extends Number> num) {
+        double sum=0.0;            
+        for(Number n:num)  
+        {  
+            sum = sum+n.doubleValue();  
+        }            
+        return sum;  
+    }  
+	
+	private void unboundedWildcardExampleForDisplaying(List<?> list) {
+        for(Object o:list)  
+        {  
+            System.out.println(o);  
+        }            
+    }  
+
+	private void lowerBoundedWildcardExampleForNumbers(List<? super Integer> list) {
+        for(Object n:list)  
+        {  
+        	System.out.println(n);  
+        }        
+    }
 }

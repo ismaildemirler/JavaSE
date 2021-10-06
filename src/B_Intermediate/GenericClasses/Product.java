@@ -1,6 +1,6 @@
 package B_Intermediate.GenericClasses;
 
-public class Product {
+public class Product implements Model {
 	
 	private String name;
 	private String code;

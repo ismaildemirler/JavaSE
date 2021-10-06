@@ -1,6 +1,6 @@
 package B_Intermediate.GenericClasses;
 
-public class Customer {
+public class Customer implements Model{
 
 	private String name;
 	private String email;
@@ -49,5 +49,5 @@ public class Customer {
 	@Override
 	public String toString() {
 		return "Customer [name=" + name + ", email=" + email + ", phone=" + phone + ", age=" + age + "]";
-	}	
+	}
 }

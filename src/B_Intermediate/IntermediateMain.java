@@ -99,5 +99,6 @@ public class IntermediateMain {
 		_GenericClasses genericClasses = new _GenericClasses();
 		genericClasses.generics();
 		genericClasses.genericClasses();
+		genericClasses.wildcards();
 	}
 }
