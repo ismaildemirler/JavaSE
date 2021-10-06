@@ -98,5 +98,21 @@ public class _Interfaces {
 		System.out.println("Salary: " + salary2);
 		System.out.println("Grade: " + grade2);
 		System.out.println("*******************************************");
+		
+		
+		/*
+		 * Additionally we can add to interfaces, properties and methods
+		 * Actually in here, static and final is necessary.
+		 * Already we can not change values because of we can not create an object of interfaces.
+		 */
+		System.out.println("Worker count in IWorker interface: " + IWorker.workerCount);
+		System.out.println("Factory name in IWorker interface: " + IWorker.factoryName);
+		System.out.println("Counter in IWorker interface: " + IWorker.counter);
+		System.out.println("Work hours per week in IWorker interface: " + IWorker.workHoursPerWeek);
+		
+		/*
+		 * We can create a method in interface just using static keyword.
+		 */
+		IWorker.work();
 	}
 }

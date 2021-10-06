@@ -102,8 +102,8 @@ public class IntermediateMain {
 //		genericClasses.genericClasses();
 //		genericClasses.wildcards();
 		
-		_FinalKeyword finalKeyword = new _FinalKeyword();
-		finalKeyword.finalVariables();
-		finalKeyword.finalMethods();
+//		_FinalKeyword finalKeyword = new _FinalKeyword();
+//		finalKeyword.finalVariables();
+//		finalKeyword.finalMethods();
 	}
 }
