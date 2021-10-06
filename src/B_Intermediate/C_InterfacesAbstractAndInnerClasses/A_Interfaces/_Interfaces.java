@@ -7,7 +7,7 @@ public class _Interfaces {
 	 */
 	
 	/*
-	 * Java does not support mulitple inheritance. Because if we could inherit from multiple classes, 
+	 * Java does not support multiple inheritance. Because if we could inherit from multiple classes, 
 	 * methods with same name in parent classes could cause problems. So we have interfaces in Java to achieve
 	 * multiple inheritance. Java Interface also represents the IS-A relationship.
 	 */
