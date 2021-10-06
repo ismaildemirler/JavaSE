@@ -18,7 +18,7 @@ import B_Intermediate.B_ArraysAndLists.D_LinkedLists.LinkedListClass;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.A_Interfaces._Interfaces;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword._StaticKeyword;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_NestedClasses._NestedClasses;
-import B_Intermediate.GenericClasses._GenericClasses;
+import B_Intermediate.D_GenericClasses._GenericClasses;
 
 public class IntermediateMain {
 
@@ -96,9 +96,11 @@ public class IntermediateMain {
 //		nestedClasses.localTypeInnerClass();
 //		nestedClasses.staticNestedClass();
 		
-		_GenericClasses genericClasses = new _GenericClasses();
-		genericClasses.generics();
-		genericClasses.genericClasses();
-		genericClasses.wildcards();
+//		_GenericClasses genericClasses = new _GenericClasses();
+//		genericClasses.generics();
+//		genericClasses.genericClasses();
+//		genericClasses.wildcards();
+		
+		
 	}
 }

@@ -1,4 +1,4 @@
-package B_Intermediate.GenericClasses;
+package B_Intermediate.D_GenericClasses;
 
 import java.util.List;
 
