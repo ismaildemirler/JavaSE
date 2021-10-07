@@ -3,7 +3,7 @@ package B_Intermediate.B_ArraysAndLists.C_WrapperClasses;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WrapperClasses {
+public class _WrapperClasses {
 
 	/*
 	 * Wrapper Classes, Autoboxing and Unboxing in Java

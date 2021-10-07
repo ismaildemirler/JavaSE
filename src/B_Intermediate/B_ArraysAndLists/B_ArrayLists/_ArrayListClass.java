@@ -2,7 +2,7 @@ package B_Intermediate.B_ArraysAndLists.B_ArrayLists;
 
 import java.util.ArrayList;
 
-public class ArrayListClass {
+public class _ArrayListClass {
 
 	/*
 	 * ArrayList in Java

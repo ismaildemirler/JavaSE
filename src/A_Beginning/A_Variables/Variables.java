@@ -1,8 +1,24 @@
 package A_Beginning.A_Variables;
 
 public class Variables {
+	
+	/*
+	 * Instance Variables
+	 */
+	int instanceVariable1 = 5;
+	String instanceVariable2 = "Instance Variable String Example";
+	
+	/*
+	 * Class Variables
+	 */
+	static int classVariable1 = 10;
+	static String classVariable2 = "Class Variable String Example";
 
 	public void beginningToVariables() {
+		
+		/*
+		 * Local Variables
+		 */
 		
 		//		To create a variable, we need to define variable type first. For ex: int, char, etc...
         //		And we can give a name to variable for ex: counter

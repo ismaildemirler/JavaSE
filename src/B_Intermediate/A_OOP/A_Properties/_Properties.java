@@ -1,6 +1,6 @@
 package B_Intermediate.A_OOP.A_Properties;
 
-public class Properties {
+public class _Properties {
 	
 	/*
 	 * Object Oriented Programming in Java
