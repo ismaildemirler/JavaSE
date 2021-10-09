@@ -59,7 +59,7 @@ public class _CallByValueCallByRef {
         System.out.println("******************************************************");
 	}
 	
-	public static void swapFunction(int number1, int number2) {
+	public void swapFunction(int number1, int number2) {
     
 		System.out.println("Before swapping (Inside of the swapFunction method), "
       		+ "number1 = " + number1 + " number2 = " + number2);
@@ -73,7 +73,7 @@ public class _CallByValueCallByRef {
       		+ "number1 = " + number1 + " number2 = " + number2);
     }
 	
-	public static void swapFunction(IntWrapper wrapper1, IntWrapper wrapper2) {
+	public void swapFunction(IntWrapper wrapper1, IntWrapper wrapper2) {
 		
 		System.out.println("Before swapping (Inside of the swapFunction method), "
 				+ "number1 = " + wrapper1.number + " number2 = " + wrapper2.number);
