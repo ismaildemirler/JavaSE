@@ -110,7 +110,5 @@ public class IntermediateMain {
 //		genericClasses.generics();
 //		genericClasses.genericClasses();
 //		genericClasses.wildcards();
-		
-		
 	}
 }
