@@ -1,7 +1,5 @@
 package C_Advance.A_Collections;
 
-import java.util.AbstractMap;
-
 public class _Collections {
 	
 	/*
