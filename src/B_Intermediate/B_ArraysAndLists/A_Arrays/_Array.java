@@ -3,7 +3,7 @@ package B_Intermediate.B_ArraysAndLists.A_Arrays;
 import java.util.Arrays;
 import java.util.Iterator;
 
-public class _ArrayClass {
+public class _Array {
 
 	/*
 	 * Arrays in Java

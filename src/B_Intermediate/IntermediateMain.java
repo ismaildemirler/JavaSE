@@ -12,10 +12,10 @@ import B_Intermediate.A_OOP.I_Association._Association;
 import B_Intermediate.A_OOP.J_Aggregation._Aggregation;
 import B_Intermediate.A_OOP.K_Composition._Composition;
 import B_Intermediate.A_OOP.L_CallByValueAndCallByReference._CallByValueCallByRef;
-import B_Intermediate.B_ArraysAndLists.A_Arrays._ArrayClass;
-import B_Intermediate.B_ArraysAndLists.B_ArrayLists._ArrayListClass;
+import B_Intermediate.B_ArraysAndLists.A_Arrays._Array;
+import B_Intermediate.B_ArraysAndLists.B_ArrayLists._ArrayList;
 import B_Intermediate.B_ArraysAndLists.C_WrapperClasses._WrapperClasses;
-import B_Intermediate.B_ArraysAndLists.D_LinkedLists._LinkedListClass;
+import B_Intermediate.B_ArraysAndLists.D_LinkedLists._LinkedList;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.A_Interfaces._Interfaces;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.C_StaticKeyword._StaticKeyword;
 import B_Intermediate.C_InterfacesAbstractAndInnerClasses.D_FinalKeyword._FinalKeyword;
@@ -71,21 +71,21 @@ public class IntermediateMain {
 //		callByValueCallByRef.callByValue();
 //		callByValueCallByRef.callByReference();
 		
-//		_ArrayClass arrays = new _ArrayClass();
+//		_Array arrays = new _Array();
 //		arrays.oneDimensionalArrays();
 //		arrays.multipleDimensionalArrays();
 //		arrays.foreachLoop();
 //		arrays.classObjectsForArrays();
 //		arrays.cloningOfArrays();
 		
-//		_ArrayListClass arrayList = new _ArrayListClass();
+//		_ArrayList arrayList = new _ArrayList();
 //		arrayList.beginningToArrayList();
 //		arrayList.moreMothodsOfArrayList();
 		
 //		_WrapperClasses wrapperClasses = new _WrapperClasses();
 //		wrapperClasses.autoboxingUnboxing();
 		
-//		_LinkedListClass linkedList = new _LinkedListClass();
+//		_LinkedList linkedList = new _LinkedList();
 //		linkedList.beginningToLinkedLists();
 //		linkedList.methodsOfLinkedList();
 		

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class _ArrayList {
@@ -125,7 +126,7 @@ public class _ArrayList {
 		 * Ways to iterate the elements of the collection in Java.
 		 * There are various ways to traverse the collection elements:
 		   1) By Iterator interface.
-	       2) By for-each loop.
+	       2) By foreach loop.
 		   3) By ListIterator interface.
 		   4) By for loop.
 		   5) By forEach() method.
