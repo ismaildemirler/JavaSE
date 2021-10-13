@@ -30,6 +30,11 @@ public class HashSetClass {
 	 * The HashSet class extends AbstractSet class which implements Set interface. 
 	 * The Set interface inherits Collection and Iterable interfaces in hierarchical order.
 	 */
+	
+	/*
+	 * HashSet uses HashTable mechanism, so elements are not in insertion order.
+	 * Adding, removing and searching have O(1) time complexity in HashSet.
+	 */
 		
 	public void hashSet() {
 		

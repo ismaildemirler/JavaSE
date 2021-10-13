@@ -23,6 +23,12 @@ public class LinkedHashSetClass {
 	 * The Set interface inherits Collection and Iterable interfaces in hierarchical order.
 	 */
 	
+	/*
+	 * LinkedHashSet stores elements by using HashTable and LinkedList architectures.
+	 * So LinkedHashSet maintains insertion order of elements.
+	 * Adding, removing and searching have O(1) time complexity in LinkedHashSet.
+	 */
+	
 	public void linkedHashSet() {
 		
 		/*

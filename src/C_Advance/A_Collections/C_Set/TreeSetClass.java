@@ -27,6 +27,12 @@ public class TreeSetClass {
 	 * and Iterable interfaces in hierarchical order.
 	 */
 	
+	/*
+	 * TreeSet stores elements by using tree architecture.
+	 * TreeSet maintains ascending order
+	 * Adding, removing and searching have O(log(n)) time complexity in TreeSet.
+	 */
+	
 	public void treeSet() {
 		
 		/*
