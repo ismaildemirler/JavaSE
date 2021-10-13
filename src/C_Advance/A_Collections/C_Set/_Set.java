@@ -347,4 +347,22 @@ public class _Set {
 		 * Since these were all the elements present in the Set when List addAll(set) was called.
 		 */
 	}
+
+	public void hashSet() {
+		
+		HashSetClass hashSetClass = new HashSetClass();
+		hashSetClass.hashSet();
+	}
+	
+	public void linkedHashSet() {
+		
+		LinkedHashSetClass linkedHashSetClass = new LinkedHashSetClass();
+		linkedHashSetClass.linkedHashSet();
+	}
+	
+	public void treeSet() {
+		
+		TreeSetClass treeSetClass = new TreeSetClass();
+		treeSetClass.treeSet();
+	}
 }

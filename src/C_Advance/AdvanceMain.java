@@ -16,8 +16,13 @@ public class AdvanceMain {
 //		linkedList.moreAboutLinkedList();
 //		linkedList.comparingPerformanceOfArrayListAndLinkedList();
 		
-		_Set set = new _Set();
-		set.setInterface();
-		set.commonMethodsOfSetInterface();
+//		_Set set = new _Set();
+//		set.setInterface();
+//		set.commonMethodsOfSetInterface();
+//		set.hashSet();
+//		set.linkedHashSet();
+//		set.treeSet();
+		
+		
 	}
 }
