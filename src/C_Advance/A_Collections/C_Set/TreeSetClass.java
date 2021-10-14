@@ -3,6 +3,7 @@ package C_Advance.A_Collections.C_Set;
 import java.util.Collection;
 import java.util.Comparator;
 import java.util.Iterator;
+import java.util.NavigableSet;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
@@ -179,7 +180,6 @@ public class TreeSetClass {
 		 * than or equal to the specified element.
 		 */
 		System.out.println("SortedSet TailSet: " + charachterSet.tailSet("C"));
-		
 		System.out.println("*************************************");
 	}
 }
