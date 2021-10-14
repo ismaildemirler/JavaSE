@@ -470,4 +470,19 @@ public class _Map {
 		}
 		System.out.println("**********************");
 	}		
+
+	public void hashMap() {
+		HashMapClass hashMapClass = new HashMapClass();
+		hashMapClass.hashMap();
+	}
+	
+	public void linkedHashMap() {
+		LinkedHashMapClass linkedHashMapClass = new LinkedHashMapClass();
+		linkedHashMapClass.linkedHashMap();
+	}
+	
+	public void treeMap() {
+		TreeMapClass treeMapClass = new TreeMapClass();
+		treeMapClass.treeMap();
+	}
 }

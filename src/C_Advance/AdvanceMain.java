@@ -28,5 +28,8 @@ public class AdvanceMain {
 		map.mapInterface();
 		map.commonMethodsOfMapInterface();
 		map.functionalOperationsInMap();
+		map.hashMap();
+		map.linkedHashMap();
+		map.treeMap();
 	}
 }
