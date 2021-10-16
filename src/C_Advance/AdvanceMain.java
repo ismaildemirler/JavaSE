@@ -24,12 +24,12 @@ public class AdvanceMain {
 //		set.linkedHashSet();
 //		set.treeSet();
 		
-		_Map map = new _Map();
-		map.mapInterface();
-		map.commonMethodsOfMapInterface();
-		map.functionalOperationsInMap();
-		map.hashMap();
-		map.linkedHashMap();
-		map.treeMap();
+//		_Map map = new _Map();
+//		map.mapInterface();
+//		map.commonMethodsOfMapInterface();
+//		map.functionalOperationsInMap();
+//		map.hashMap();
+//		map.linkedHashMap();
+//		map.treeMap();
 	}
 }

@@ -483,6 +483,7 @@ public class _Map {
 	public void hashMap() {
 		HashMapClass hashMapClass = new HashMapClass();
 		hashMapClass.hashMap();
+		hashMapClass.workingOfHashMap();
 	}
 	
 	public void linkedHashMap() {

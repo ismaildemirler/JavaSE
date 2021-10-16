@@ -3,12 +3,14 @@ package C_Advance.A_Collections.D_Map;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
+import java.util.Objects;
 import java.util.TreeMap;
 
 public class HashMapClass {
@@ -106,6 +108,206 @@ public class HashMapClass {
 		System.out.println("******************************************************");
 	}
 
+	public void workingOfHashMap() {
+		
+		/*
+		 * What is Hashing
+		 * It is the process of converting an object into an integer value. 
+		 * The integer value helps in indexing and faster searches.
+		 */
+		
+		/*
+		 * What is HashMap
+		 * HashMap is a part of the Java collection framework. It uses a technique called Hashing. 
+		 * It implements the map interface. It stores the data in the pair of Key and Value. 
+		 * HashMap contains an array of the nodes, and the node is represented as a class. 
+		 * It uses an array and LinkedList data structure internally for storing Key and Value. 
+		 * There are four fields in HashMap (Node<K, v>):
+		   1. int hash
+		   2. K key
+		   3. V value
+		   4. Node<K, V> next
+		 */
+		
+		/*
+		 * Before understanding the internal working of HashMap, you must be aware of hashCode() and equals() method.
+	       - equals(): It checks the equality of two objects. It compares the Key, whether they are equal or not. 
+	         It is a method of the Object class. It can be overridden. If you override the equals() method, 
+	         then it is mandatory to override the hashCode() method.
+	       - hashCode(): This is the method of the object class. It returns the memory reference of the object in integer form. 
+	         The value received from the method is used as the bucket number. The bucket number is the address of the element 
+	         inside the map. Hash code of null Key is 0.
+		   - Buckets: Array of the node is called buckets. Each node has a data structure like a LinkedList. 
+		     More than one node can share the same bucket. It may be different in capacity.
+		 */
+		
+		/*
+		 * Insert Key, Value pair in HashMap
+		 * We use put() method to insert the Key and Value pair in the HashMap. 
+		 * The default size of HashMap is 16 (0 to 15).
+		 */
+		HashMap<String, String> teams = new HashMap<String, String>();
+		teams.put("Club1", "Player 1");
+		teams.put("Club2", "Player 2");
+		teams.put("Club3", "Player 3");
+		
+		/*
+		 * Let's see at which index the Key, value pair will be saved into HashMap. 
+		 * When we call the put() method, then it calculates the hash code of the Key "Club1" 
+		 * Suppose the hash code of "Club1" is 2657860. To store the Key in memory, we have to calculate the index.
+		 */
+		
+		/*
+		 * Calculating Index
+		 * Index minimizes the size of the array. The Formula for calculating the index is:
+		 * 
+		 * Index = hashcode(Key) & (n-1)  
+		 * 
+		 * Where n is the size of the array. Hence the index value for "Club1" is:
+		 * 
+		 * Index = 2657860 & (16-1) = 4  
+		 * 
+		 * The value 4 is the computed index value where the Key and value will store in HashMap.
+		 */
+		
+		/*
+		 * Hash Collision
+		 * This is the case when the calculated index value is the same for two or more Keys. 
+		 * Let's calculate the hash code for another Key "Club2" Suppose the hash code for "Club2" is 63281940. 
+		 * To store the Key in the memory, we have to calculate index by using the index formula.
+		 * 
+		 * Index = 63281940 & (16-1) = 4  
+		 * 
+		 * The value 4 is the computed index value where the Key will be stored in HashMap. 
+		 * In this case, equals() method check that both Keys are equal or not. 
+		 * If Keys are same, replace the value with the current value. Otherwise, 
+		 * connect this node object to the existing node object through the LinkedList. 
+		 * Hence both Keys will be stored at index 4.
+		 * Similarly, we will store the Key "Club3" Suppose hash code for the Key is 2349873. 
+		 * The index value will be 1. Hence this Key will be stored at index 1.
+		 */
+		
+		/*
+		 * get() method in HashMap
+		 * get() method is used to get the value by its Key. It will not fetch the value if you don't know the Key. 
+		 * When get(K Key) method is called, it calculates the hash code of the Key.
+		 * Suppose we have to fetch the Key "Club1". The following method will be called.
+		 * 
+		 * map.get(new Key("Club1"));  
+		 * 
+		 * It generates the hash code as 2657860. Now calculate the index value of 2657860 by using index formula. 
+		 * The index value will be 4, as we have calculated above. get() method search for the index value 4. 
+		 * It compares the first element Key with the given Key. If both keys are equal, then it returns 
+		 * the value else check for the next element in the node if it exists. In our scenario, it is found as 
+		 * the first element of the node and return the value 'Player 1'.
+		 * 
+		 * Let's fetch another Key "Club2"
+		 * The hash code of the Key "Club2" is 63281940. The calculated index value of 63281940 is 4, 
+		 * as we have calculated for put() method. Go to index 4 of the array and compare the first element's Key 
+		 * with the given Key. It also compares Keys. In our scenario, the given Key is the second element, 
+		 * and the next of the node is null. It compares the second element Key with the specified Key and 
+		 * returns the value 'Player 2'. It returns null if the next of the node is null.
+		 */
+		
+		/*
+		 * Generally if we add same item in a HashSet, it can not be added.
+		 * Let's do an example with our custom Object. 
+		 */
+		HashSet<Citizen> citizens = new HashSet<Citizen>();
+		citizens.add(new Citizen("Ýsmail", "111"));
+		citizens.add(new Citizen("Ali", "222"));
+		citizens.add(new Citizen("Mehmet", "333"));
+		citizens.add(new Citizen("Ýsmail", "111"));
+		
+		System.out.println("Citizens: ");
+		citizens.forEach(citizen -> {
+			System.out.println(citizen);
+		});
+		System.out.println("*******************************");
+		
+		/*
+		 * Like we see above objects which has same name and same identity numbers can be added to HashSet.
+		 * Because in String or similar data type Java can execute hashCode and equals() methods
+		 * and can understand if the item is same or not. But for our custom objects for this,
+		 * we have to override hashCode and equals() methods to provide uniqueness.
+		 * To show this we will use Customer class which got hashCode and equals() methods overridden below.
+		 */
+		
+		HashSet<Customer> customers = new HashSet<Customer>();
+		customers.add(new Customer("Ýsmail", "111"));
+		customers.add(new Customer("Ali", "222"));
+		customers.add(new Customer("Mehmet", "333"));
+		customers.add(new Customer("Ýsmail", "111"));
+		
+		System.out.println("Customers: ");
+		customers.forEach(customer -> {
+			System.out.println(customer);
+		});
+		System.out.println("*******************************");
+		
+		/*
+		 * Like we see above, when we generate hashCode() and equals() method in our object
+		 * same instances which has same name and identity number can not be added to HashSet
+		 */
+	}
+	
+	public class Citizen {
+		private String name;
+		private String identityNumber;
+		
+		public Citizen(String name, String identityNumber) {
+			this.name = name;
+			this.identityNumber = identityNumber;
+		}
+
+		@Override
+		public String toString() {
+			return "Identity Number : " + identityNumber + " - " + "Name: " + name;
+		}
+	}
+	
+	public class Customer {
+		private String name;
+		private String identityNumber;
+		
+		public Customer(String name, String identityNumber) {
+			this.name = name;
+			this.identityNumber = identityNumber;
+		}
+
+		@Override
+		public int hashCode() {
+			final int prime = 31;
+			int result = 1;
+			result = prime * result + getEnclosingInstance().hashCode();
+			result = prime * result + Objects.hash(identityNumber, name);
+			return result;
+		}
+
+		@Override
+		public boolean equals(Object obj) {
+			if (this == obj)
+				return true;
+			if (obj == null)
+				return false;
+			if (getClass() != obj.getClass())
+				return false;
+			Customer other = (Customer) obj;
+			if (!getEnclosingInstance().equals(other.getEnclosingInstance()))
+				return false;
+			return identityNumber == other.identityNumber && Objects.equals(name, other.name);
+		}
+
+		@Override
+		public String toString() {
+			return "Identity Number : " + identityNumber + " - " + "Name: " + name;
+		}
+
+		private HashMapClass getEnclosingInstance() {
+			return HashMapClass.this;
+		}
+	}
+	
 	/*
 	 * Difference between HashSet and HashMap class in Java
 	 */
