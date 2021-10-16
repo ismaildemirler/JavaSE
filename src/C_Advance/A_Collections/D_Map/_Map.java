@@ -314,6 +314,15 @@ public class _Map {
 		var size = map.size();
 		System.out.println("Size of map: " + size);
 		System.out.println("*******************************");
+		
+		/*
+		 * forEach() method
+		 */
+		System.out.println("forEach iteration in map: ");
+		map.forEach((k, v) -> {
+			System.out.println("Key: " + k + " - " + "Value: " + v);
+		});
+		System.out.println("********************************");
 	}
 	
 	public void functionalOperationsInMap() {
@@ -474,6 +483,7 @@ public class _Map {
 	public void hashMap() {
 		HashMapClass hashMapClass = new HashMapClass();
 		hashMapClass.hashMap();
+		hashMapClass.sortingHashMap();
 	}
 	
 	public void linkedHashMap() {

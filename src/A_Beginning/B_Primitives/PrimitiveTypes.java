@@ -62,7 +62,7 @@ public class PrimitiveTypes {
 		 * The float data type is a single-precision 32-bit IEEE 754 floating-point.
 		 * Use a float (instead of double) if you need to save memory in large arrays of floating-point numbers.
 		 * upto 7 decimal digits
-		 * Defalut value is 0.0
+		 * Default value is 0.0
 		 */
         System.out.println(Float.MAX_VALUE);
         System.out.println(Float.MIN_VALUE);  

@@ -64,6 +64,14 @@ public class _Set {
      * but we will leave the concurrency utilities out of this tutorial.
 	 */
 	
+	/*
+	 * The set interface is used to create the mathematical set. 
+	 * The set interface use collection interface's methods to avoid the insertion of the same elements. 
+	 * SortedSet and NavigableSet are two interfaces that extend the set implementation.
+	 * the NavigableSet and SortedSet are both the interfaces. The NavigableSet extends the SortedSet, 
+	 * so it will not retain the insertion order and store the data in a sorted way.
+	 */
+	
 	public void setInterface() {
 		
 		/*
@@ -210,6 +218,7 @@ public class _Set {
 		 * The Java List interface has a method called addAll() 
 		 * which adds all elements from another Collection (List or Set) to the Set. 
 		 * In set theory this corresponds to the union of the Set and the other Collection. 
+		 * addAll() method is used to perform the union
 		 * Here is an example of adding all elements from another Set to a Java Set:
 		 */
 		set1.add("Item1");
@@ -234,6 +243,7 @@ public class _Set {
 		 * which removes all elements in the Set which are also 
 		 * present in another Collection. In set theory, this is referred 
 		 * to as the difference between the Set and the other Collection. 
+		 * removeAll() method is used to perform difference.
 		 * Here is an example of removing all elements from a Java Set 
 		 * which are also present in another Collection:
 		 */
@@ -256,7 +266,8 @@ public class _Set {
 		 * The Java Set interface also has a method which retains all elements 
 		 * in the Set which are also present in another Collection. 
 		 * All elements found in the Set which are not present in the other Collection 
-		 * will be removed. In set theory this is referred to as the intersection between 
+		 * will be removed. retainAll() method is used to perform the intersection.
+		 * In set theory this is referred to as the intersection between 
 		 * the Set and the other Collection. Here is an example of retaining all elements 
 		 * in a Java Set which are also present in another Set:
 		 */
