@@ -483,16 +483,17 @@ public class _Map {
 	public void hashMap() {
 		HashMapClass hashMapClass = new HashMapClass();
 		hashMapClass.hashMap();
-		hashMapClass.sortingHashMap();
 	}
 	
 	public void linkedHashMap() {
 		LinkedHashMapClass linkedHashMapClass = new LinkedHashMapClass();
 		linkedHashMapClass.linkedHashMap();
+		linkedHashMapClass.sortingHashMap();
 	}
 	
 	public void treeMap() {
 		TreeMapClass treeMapClass = new TreeMapClass();
 		treeMapClass.treeMap();
+		treeMapClass.extraMethodsOfTreeMap();
 	}
 }
