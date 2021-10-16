@@ -214,10 +214,10 @@ public class HashMapClass {
 		 * Let's do an example with our custom Object. 
 		 */
 		HashSet<Citizen> citizens = new HashSet<Citizen>();
-		citizens.add(new Citizen("Ýsmail", "111"));
+		citizens.add(new Citizen("Ahmet", "111"));
 		citizens.add(new Citizen("Ali", "222"));
 		citizens.add(new Citizen("Mehmet", "333"));
-		citizens.add(new Citizen("Ýsmail", "111"));
+		citizens.add(new Citizen("Ahmet", "111"));
 		
 		System.out.println("Citizens: ");
 		citizens.forEach(citizen -> {
@@ -234,10 +234,10 @@ public class HashMapClass {
 		 */
 		
 		HashSet<Customer> customers = new HashSet<Customer>();
-		customers.add(new Customer("Ýsmail", "111"));
+		customers.add(new Customer("Ahmet", "111"));
 		customers.add(new Customer("Ali", "222"));
 		customers.add(new Customer("Mehmet", "333"));
-		customers.add(new Customer("Ýsmail", "111"));
+		customers.add(new Customer("Ahmet", "111"));
 		
 		System.out.println("Customers: ");
 		customers.forEach(customer -> {
