@@ -496,5 +496,6 @@ public class _Map {
 		TreeMapClass treeMapClass = new TreeMapClass();
 		treeMapClass.treeMap();
 		treeMapClass.extraMethodsOfTreeMap();
+		treeMapClass.treeExample();
 	}
 }

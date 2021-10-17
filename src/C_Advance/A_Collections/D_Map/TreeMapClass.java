@@ -292,6 +292,32 @@ public class TreeMapClass {
 		System.out.println("*********************************");
 	}
 	
+	public void treeExample() {
+		
+		/*
+		 * In this example, we will find frequencies of each character in a word 
+		 * by using TreeMap.
+		 */
+		String word = "treemapexample";
+		Map<Character, Integer> frequencies = new TreeMap<Character, Integer>(); 
+		
+		for (int i = 0; i < word.length(); i++) {
+			char character = word.charAt(i);
+			if (frequencies.containsKey(character)) {
+				frequencies.replace(character, frequencies.get(character) + 1);
+			}
+			else {
+				frequencies.put(character, 1);
+			}
+		}
+		
+		System.out.println("Characters and frequencies: ");
+		for (Map.Entry entry : frequencies.entrySet()) {
+			System.out.println(entry.getKey() + " - " + entry.getValue());
+		}
+		System.out.println("*********************************");
+	}
+	
 	/*
 	 * Difference between HashMap and TreeMap
 	 */

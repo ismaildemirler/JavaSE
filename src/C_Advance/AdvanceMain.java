@@ -12,6 +12,7 @@ public class AdvanceMain {
 //		_ArrayList arrayList = new _ArrayList();
 //		arrayList.moreAboutArrayList();
 //		arrayList.iteratingThroughRemainingWays();
+//		arrayList.sortingLists();
 		
 //		_LinkedList linkedList = new _LinkedList();
 //		linkedList.moreAboutLinkedList();
@@ -31,5 +32,7 @@ public class AdvanceMain {
 //		map.hashMap();
 //		map.linkedHashMap();
 //		map.treeMap();
+		
+		
 	}
 }
