@@ -44,9 +44,9 @@ public class AdvanceMain {
 //		stack.stack();
 //		stack.stackExample();
 		
-		_Queue queue = new _Queue();
-		queue.queue();
-		queue.priorityQueue();
-		queue.deque();
+//		_Queue queue = new _Queue();
+//		queue.queue();
+//		queue.priorityQueue();
+//		queue.deque();
 	}
 }
