@@ -5,6 +5,8 @@ import C_Advance.A_Collections.B_LinkedList._LinkedList;
 import C_Advance.A_Collections.C_Set._Set;
 import C_Advance.A_Collections.D_Map._Map;
 import C_Advance.A_Collections.E_Vector._Vector;
+import C_Advance.A_Collections.F_Stack._Stack;
+import C_Advance.A_Collections.G_Queue._Queue;
 
 public class AdvanceMain {
 	
@@ -38,6 +40,11 @@ public class AdvanceMain {
 //		vector.vector();
 //		vector.concurrency();
 		
+//		_Stack stack = new _Stack();
+//		stack.stack();
+//		stack.stackExample();
+		
+		_Queue queue = new _Queue();
 		
 	}
 }
