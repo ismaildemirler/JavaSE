@@ -8,6 +8,8 @@ import C_Advance.A_Collections.E_Vector._Vector;
 import C_Advance.A_Collections.F_Stack._Stack;
 import C_Advance.A_Collections.G_Queue._Queue;
 import C_Advance.A_Collections.H_Iterator._Iterator;
+import C_Advance.B_ExceptionHandling._ExceptionHandling;
+import C_Advance.B_ExceptionHandling.A_TryCatchBlocks._TryCatch;
 
 public class AdvanceMain {
 	
@@ -50,9 +52,20 @@ public class AdvanceMain {
 //		queue.priorityQueue();
 //		queue.deque();
 		
-		_Iterator iterator = new _Iterator();
-		iterator.iterator();
-		iterator.listIterator();
-		iterator.customIterable();
+//		_Iterator iterator = new _Iterator();
+//		iterator.iterator();
+//		iterator.listIterator();
+//		iterator.customIterable();
+		
+//		_ExceptionHandling exceptionHandling = new _ExceptionHandling();
+//		exceptionHandling.exceptionHandling();
+//		
+//		_TryCatch tryCatch = new _TryCatch();
+//		tryCatch.tryCatch();
+//		tryCatch.multipleCatch();
+//		tryCatch.nestedTry();
+//		tryCatch.finallyBlock();
+		
+		
 	}
 }
