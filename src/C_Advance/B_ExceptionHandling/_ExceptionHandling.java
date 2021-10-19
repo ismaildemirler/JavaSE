@@ -132,4 +132,111 @@ public class _ExceptionHandling {
 		}
 		System.out.println("****************************************");
 	}
+
+	public void exceptionHandlingWithMethodOverriding() {
+		
+		/*
+		 * Exception Handling with Method Overriding in Java
+		 * 
+		 * There are many rules if we talk about method overriding with exception handling.
+		 * Some of the rules are listed below:
+		   - If the superclass method does not declare an exception
+			 - If the superclass method does not declare an exception, subclass overridden method 
+			   cannot declare the checked exception but it can declare unchecked exception.
+
+		   - If the superclass method declares an exception
+			 - If the superclass method declares an exception, subclass overridden method can declare same, 
+			   subclass exception or no exception but cannot declare parent exception.
+		 */
+		
+		/*
+		 * If the superclass method does not declare an exception
+		 */
+		Parent p = new TestExceptionChild();    
+		p.message(); 
+		
+		/*
+		 * If the superclass method declares an exception
+		 * Example in case subclass overridden method declares same exception
+		 * it is no problem
+		 */
+		try {
+			p.log();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		/*
+		 * Example in case subclass overridden method declares subclass exception
+		 */
+		try {
+			p.print();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		/*
+		 * Example in case subclass overridden method declares no exception
+		 */
+		try {
+			p.save();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	class Parent {
+		void message() {
+			System.out.println("Parent message Method");
+		}
+		
+		void log() throws Exception {
+			System.out.println("Parent log Method");
+		}
+		
+		void print() throws Exception {
+			System.out.println("Parent print Method");
+		}
+		
+		void save() throws Exception {
+			System.out.println("Parent save Method");
+		}
+	}
+	
+	class TestExceptionChild extends Parent {
+		
+		// overriding the method in child class  
+		// gives compile time error  
+//		@Override
+//		void message() throws IOException {
+//			System.out.println("TestExceptionChild");   
+//		}
+		
+		@Override 
+		void message() throws ArithmeticException {
+			System.out.println("TestExceptionChild");
+		}
+		
+		// overriding the method in child class  
+	    // gives compile time error  
+//		@Override
+//		void log() throws Exception {
+//			System.out.println("TestExceptionChild");
+//		}
+		
+		@Override 
+		void log() throws Exception {
+			System.out.println("TestExceptionChild");
+		}
+		
+		@Override 
+		void print() throws NullPointerException {
+			System.out.println("TestExceptionChild");
+		}
+		
+		@Override 
+		void save() {
+			System.out.println("TestExceptionChild");
+		}
+	}
 }
