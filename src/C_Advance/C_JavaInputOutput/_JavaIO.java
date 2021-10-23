@@ -2,6 +2,7 @@ package C_Advance.C_JavaInputOutput;
 
 import java.io.IOException;
 
+import C_Advance.C_JavaInputOutput.A_OutputStream.BufferedOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.FileOutputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
 
@@ -106,8 +107,11 @@ public class _JavaIO {
 		
 		FileOutputStreamClass fileOutputStreamClass = new FileOutputStreamClass();
 	    fileOutputStreamClass.fileOutputStream();
+	    
+	    BufferedOutputStreamClass bufferedOutputStreamClass = new BufferedOutputStreamClass();
+	    bufferedOutputStreamClass.bufferedOutputStream();
 	}
-	
+	 
 	public void inputStream() throws IOException {
 		
 		FileInputStreamClass fileInputStreamClass = new FileInputStreamClass();

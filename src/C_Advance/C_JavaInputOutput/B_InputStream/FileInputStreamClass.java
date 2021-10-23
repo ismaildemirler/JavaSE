@@ -98,8 +98,9 @@ public class FileInputStreamClass {
 		int bytesRead = fileInputStream.read(data1, 0, data1.length);
 
 		while(bytesRead != -1) {
-			System.out.println("Bytes : " + data1 + " " + bytesRead);
+			//doSomethingWithData(data1, bytesRead);
 			bytesRead = fileInputStream.read(data1, 0, data1.length);
+			System.out.println("Bytes by using read(byte[] bytes) : " + data1 + " " + bytesRead);
 		}
 		
 		/*
@@ -175,8 +176,7 @@ public class FileInputStreamClass {
         int j = 0;    
         while((j = fin.read()) != -1){    
          System.out.print((char)j);    
-        }    
-        fin.close();   
+        }     
         System.out.println("");
         System.out.println("***********************************");
 	}

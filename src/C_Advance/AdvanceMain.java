@@ -1,5 +1,7 @@
 package C_Advance;
 
+import java.io.IOException;
+
 import C_Advance.A_Collections.A_ArrayList._ArrayList;
 import C_Advance.A_Collections.B_LinkedList._LinkedList;
 import C_Advance.A_Collections.C_Set._Set;
@@ -82,11 +84,11 @@ public class AdvanceMain {
 //		customException.customExceptions();
 		
 		_JavaIO io = new _JavaIO();
-		io.javaIO();
 		try {
+			io.javaIO();
 			io.outputStream();
 			io.inputStream();
-		} catch (Exception e) {
+		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage()); 
 		}
 	}
