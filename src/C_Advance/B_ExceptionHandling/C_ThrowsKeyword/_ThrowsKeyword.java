@@ -93,7 +93,7 @@ public class _ThrowsKeyword {
 			try {
 				connectDevice();
 			} catch (Exception e) {
-				System.out.println("exception handled");
+				System.out.println("exception handled"); 
 			}
 		}
 	}

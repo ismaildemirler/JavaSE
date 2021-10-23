@@ -118,4 +118,82 @@ public class _Collections {
 	   - Although Map interface is not associated with Collection interface, 
 	     it has place in Collection Framework. 
 	 */
+	
+	/*
+	 * ********************************************************************************************
+	 */
+	
+	/*
+	 * SUMMARIZE OF THE COLLECTIONS
+	 */
+	
+	/*
+	 * The Properties Of The Classes Which Implements List Interface:
+	   - They store elements as list.
+	   - They can have duplicate elements.
+	   - They have indexes for every elements.
+	   - They maintain insertion order.
+	   - It is too slow to search for one element.
+	   - It is too fast to find an element by using index number.
+	   - Lists can be sorted by using Collections.sort() method.
+	   - Because of that some of its methods were developed by using "synchronized" keyword,
+	     Vectors can be used in Thread operations.
+	   - When we want to add an item to end of list we better use ArrayList structure.
+	     Because ArrayList structure is faster in situations when the items are added to the end.
+	   - When we want to insert an item to beginning or middle of list we better use LinkedList structure.
+	     Because LinkedList does not handle all items, it handles just previous and next items of the inserted element.
+	 */
+	
+	/*
+	 * The Properties Of The Classes Which Implements Set Interface:
+	   - They do not allow duplicate elements. One element can be existed uniquely.
+	     So they need to use when elements are wanted to contained just once.
+	   - Elements do not have indexes.
+	   - Controlling if an element is exist or not is faster than List structure.
+	   - In some time when it is not important the data structure maintain insertion order and wanted to
+	     have faster results in query operations, HashSet structure is needed to use.
+	     Because HashSet does not maintain insertion order. It stores and query elements by using 
+	     hash functions. Because of that query operations are fast and have constant time complexity. O(1).
+	   - When it is important the data structure maintain insertion order and wanted to have faster 
+	     results in query operations, LinkedHashSet structure is needed to use.
+	     Because LinkedHashSet uses hash functions to store and query elements and also maintains insertion
+	     order by linked structure. Querying operations have constant time O(1).
+	   - When it is important the data structure sort elements, TreeSet is needed to use.
+	     Because TreeSet store elements in tree structure, the elements are always sorted. But querying 
+	     operations have O(log(n)) time complexity because of the tree structure.
+	 */
+	
+	/*
+	 * The Properties Of The Classes Which Implements Map Interface:
+	   - Elements are stored by using key-value pair relationship.
+	   - A key have one value.
+	   - Keys can not be duplicated. 
+	   - It is too fast to find a value of element by using key of the element.
+	   - Iterating elements one by one is slow.
+	   - In HashMap, keys and values are not sorted and not in insertion order.
+	   - LinkedHashMap maintains insertion order of keys and values.
+	   - In TreeMap, elements are sorted by keys.
+	 */
+	
+	/*
+	 * The Properties Of The Classes Which Implements Queue Interface:
+	   - LinkedList: When a LinkedList is created by using a reference of Queue Interface, it acts like
+	     Queue. It works by using First In First Out (FIFO) method.
+	   - Though PriorityQueue implements Queue Interface, it does not work by using First In First Out 
+	     (FIFO) method. Because some of the methods have priority.
+	 */
+	
+	/*
+	 * The Properties Of The Classes Which Extends Vector Class:
+	   - Stack: It works by using Last In First Out (LIFO) method. It has a lot of implementations in computers.  
+	 */
+	
+	/*
+	 * Points to Remember:
+	   - We need to implement Comparable Interface or Comparator Interface to sort a data structure which
+	     has custom class objects.
+	   - We can iterate all items in a data structure by creating an iterator of that data structure.
+	     So we need to implement Iterable Interface and create an iterator of data structure which
+	     has custom class objects to iterate objects which is created from custom classes.
+	 */
 }

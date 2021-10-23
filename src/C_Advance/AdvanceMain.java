@@ -13,6 +13,7 @@ import C_Advance.B_ExceptionHandling.A_TryCatchBlocks._TryCatch;
 import C_Advance.B_ExceptionHandling.B_ThrowKeyword._ThrowKeyword;
 import C_Advance.B_ExceptionHandling.C_ThrowsKeyword._ThrowsKeyword;
 import C_Advance.B_ExceptionHandling.D_CustomException._CustomException;
+import C_Advance.C_JavaInputOutput._JavaIO;
 
 public class AdvanceMain {
 	
@@ -80,6 +81,12 @@ public class AdvanceMain {
 //		_CustomException customException = new _CustomException();
 //		customException.customExceptions();
 		
-		
+		_JavaIO io = new _JavaIO();
+		io.javaIO();
+		try {
+			io.outputStream();
+		} catch (Exception e) {
+			System.out.println("Error: " + e.getMessage());
+		}
 	}
 }
