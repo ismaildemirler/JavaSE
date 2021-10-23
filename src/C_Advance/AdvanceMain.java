@@ -85,8 +85,9 @@ public class AdvanceMain {
 		io.javaIO();
 		try {
 			io.outputStream();
+			io.inputStream();
 		} catch (Exception e) {
-			System.out.println("Error: " + e.getMessage());
+			System.out.println("Error: " + e.getMessage()); 
 		}
 	}
 }

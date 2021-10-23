@@ -25,7 +25,7 @@ public class FileOutputStreamClass {
 		 */
 		byte bWrite[] = {11,21,3,40,5};
 		
-		OutputStream output = new FileOutputStream("c:\\data\\output-text.txt");
+		OutputStream output = new FileOutputStream("text.txt");
 		for(int x = 0; x < bWrite.length ; x++) {
 			output.write(bWrite[x]);   // writes the bytes
         }
@@ -88,7 +88,25 @@ public class FileOutputStreamClass {
 		 * Here is an example of writing data to a Java FileOutputStream using its write() method.
 		 * This example writes the byte value 123 to the given Java FileOutputStream.
 		 */
-		OutputStream outputStream1 = new FileOutputStream("c:\\data\\output-text.txt");
+		
+		/*
+		 * Unfortunately, if an exception is thrown during the write() call in the example above, 
+		 * that exception will cause the program flow to break before the close() method is called. 
+		 * Therefore it is better to close a Java FileOutputStream using the Java try with resources construct. 
+		 * Here is an example of closing a Java FileOutputStream using the try-with-resources construct:
+		 */
+		try(OutputStream outputStream = new FileOutputStream("text.txt")) {
+		    outputStream.write(123);
+		}
+		
+		/*
+		 * Notice how the FileOutputStream is declared inside the parentheses following the try keyword. 
+		 * All resources declared inside these parentheses will be closed automatically once the program 
+		 * flow exits the try block, regardless of whether an exception is thrown or not. 
+		 * In other words, the FileOutputStream close() will be called automatically for you.
+		 */
+		
+		OutputStream outputStream1 = new FileOutputStream("text.txt", true);
 		outputStream1.write(123);
 
 		/*
@@ -98,9 +116,8 @@ public class FileOutputStreamClass {
 		 * instead of just a single byte at a time. 
 		 * Here is an example of writing an array of bytes to a Java FileOutputStream :
 		 */
-		OutputStream outputStream2 = new FileOutputStream("c:\\data\\output-text.txt");
 		byte[] bytesArr =  new byte[]{1,2,3,4,5};
-		outputStream2.write(bytesArr);
+		outputStream1.write(bytesArr);
 		
 		/*
 		 * Write Performance
@@ -121,10 +138,9 @@ public class FileOutputStreamClass {
 		 * all data which has been written to the FileOutputStream so far, is fully written to disk too. 
 		 * Here is an example of calling the Java FileOutputStream flush() method:
 		 */
-		OutputStream outputStream3 = new FileOutputStream("c:\\data\\output-text.txt");
-		byte[] bytes =  new byte[]{1,2,3,4,5};
-		outputStream3.write(bytes);
-		outputStream3.flush();
+		byte[] bytes =  new byte[]{101, 75, 66, 78};
+		outputStream1.write(bytes);
+		outputStream1.flush();
 		
 		/*
 		 * Closing a FileOutputStream
@@ -132,43 +148,23 @@ public class FileOutputStreamClass {
 		 * You do so by calling its close() method. Here is an example of closing a 
 		 * Java FileOutputStream by calling its close() method:
 		 */
-		OutputStream outputStream4 = new FileOutputStream("c:\\data\\output-text.txt");
-		outputStream4.write(123);
-		outputStream4.close();
-		
-		/*
-		 * Unfortunately, if an exception is thrown during the write() call in the example above, 
-		 * that exception will cause the program flow to break before the close() method is called. 
-		 * Therefore it is better to close a Java FileOutputStream using the Java try with resources construct. 
-		 * Here is an example of closing a Java FileOutputStream using the try-with-resources construct:
-		 */
-		try( OutputStream outputStream = new FileOutputStream("c:\\data\\output-text.txt")) {
-		    outputStream.write(123);
-		}
-		
-		/*
-		 * Notice how the FileOutputStream is declared inside the parentheses following the try keyword. 
-		 * All resources declared inside these parentheses will be closed automatically once the program 
-		 * flow exits the try block, regardless of whether an exception is thrown or not. 
-		 * In other words, the FileOutputStream close() will be called automatically for you.
-		 */
+		outputStream1.write(123);
 		
 		/*
 		 * Example 1) Write Byte
-		 */
-		FileOutputStream fout1 = new FileOutputStream("c:\\data\\output-text.txt");    
-		fout1.write(65);    
-		fout1.close();    
+		 */ 
+		outputStream1.write(65);   
         System.out.println("success...");  
+        System.out.println("*****************************************");
         
         /*
          * Example 2) Write String
-         */
-        FileOutputStream fout2 = new FileOutputStream("c:\\data\\output-text.txt");     
+         */   
         String s = "Welcome to Java IO Courses.";    
         byte b[] = s.getBytes();//converting string into byte array    
-        fout2.write(b);    
-        fout2.close();    
+        outputStream1.write(b);           
+        outputStream1.close();    
         System.out.println("Welcome to Java IO Courses has been written to file...");    
+        System.out.println("*****************************************"); 
 	}
 }

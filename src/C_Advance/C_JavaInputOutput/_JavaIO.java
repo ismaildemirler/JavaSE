@@ -3,6 +3,7 @@ package C_Advance.C_JavaInputOutput;
 import java.io.IOException;
 
 import C_Advance.C_JavaInputOutput.A_OutputStream.FileOutputStreamClass;
+import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
 
 public class _JavaIO {
 
@@ -21,6 +22,7 @@ public class _JavaIO {
 		
 		/*
 		 * Stream
+		 * Java uses Streams to speed up input-output operations.
 		 * A stream is a sequence of data. In Java, a stream is composed of bytes. 
 		 * It's called a stream because it is like a stream of water that continues to flow.
 		 * In Java, 3 streams are created for us automatically. 
@@ -104,5 +106,11 @@ public class _JavaIO {
 		
 		FileOutputStreamClass fileOutputStreamClass = new FileOutputStreamClass();
 	    fileOutputStreamClass.fileOutputStream();
+	}
+	
+	public void inputStream() throws IOException {
+		
+		FileInputStreamClass fileInputStreamClass = new FileInputStreamClass();
+		fileInputStreamClass.fileInputStream();
 	}
 }
