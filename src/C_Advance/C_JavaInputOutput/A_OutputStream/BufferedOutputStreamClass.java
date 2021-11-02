@@ -79,7 +79,8 @@ public class BufferedOutputStreamClass {
 		 * It writes the specified byte to the buffered output stream.
 		 * 
 		 * void write(byte[] b, int off, int len)
-		 * It write the bytes from the specified byte-input stream into a specified byte array, starting with the given offset
+		 * It write the bytes from the specified byte-input stream into a specified byte array, 
+		 * starting with the given offset
 		 * 
 		 * void flush()
 		 * It flushes the buffered output stream.
@@ -123,8 +124,6 @@ public class BufferedOutputStreamClass {
 	     bout.flush();    
 	     bout.close();    
 	     fout.close();    
-	     System.out.println("success");    
-	     
-	     
+	     System.out.println("success");     
 	}
 }
