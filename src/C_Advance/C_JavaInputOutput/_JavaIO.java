@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import C_Advance.C_JavaInputOutput.A_OutputStream.BufferedOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.ByteArrayOutputStreamClass;
+import C_Advance.C_JavaInputOutput.A_OutputStream.DataOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.FileOutputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.BufferedInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.ByteArrayInputStreamClass;
@@ -118,6 +119,9 @@ public class _JavaIO {
 	    
 	    ByteArrayOutputStreamClass byteArrayOutputStreamClass = new ByteArrayOutputStreamClass();
 	    byteArrayOutputStreamClass.byteArrayOutputStream();
+	    
+	    DataOutputStreamClass dataOutputStreamClass = new DataOutputStreamClass();
+	    dataOutputStreamClass.dataOutputStream();
 	}
 	 
 	public void inputStream() throws IOException {
