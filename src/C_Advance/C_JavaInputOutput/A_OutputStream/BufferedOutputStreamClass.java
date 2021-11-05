@@ -9,7 +9,7 @@ import java.io.OutputStream;
 public class BufferedOutputStreamClass {
 
 	/*
-	 * BufferedOutputStream in Java
+	 * BufferedOutputStream Class in Java
 	 */
 	
 	/*
