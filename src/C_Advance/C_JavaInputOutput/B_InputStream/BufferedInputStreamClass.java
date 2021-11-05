@@ -174,13 +174,13 @@ public class BufferedInputStreamClass {
 		  input = new FileInputStream("text.txt");
 
 		  int data = input.read();
+		  System.out.println("Buffered Input Stream : ");
 		  while(data != -1) {
 		      //do something with data...
 			  //doSomethingWithData(data);
-		      System.out.println("Buffered Imput Stream : " + data);
 
 		      data = input.read();
-		      System.out.println("***********************************");
+		      System.out.print(data + " - ");
 		  }
 		}catch(IOException e){
 		  //do something with e... log, perhaps rethrow etc.
@@ -193,6 +193,8 @@ public class BufferedInputStreamClass {
 				e.printStackTrace();
 			}
 		}
+		System.out.println("");
+		System.out.println("*******************************************************");
 		
 		/*
 		 * Notice how the InputStream is now closed inside a finally clause. 
@@ -217,6 +219,7 @@ public class BufferedInputStreamClass {
 			        int inChar = input.read();
 			        while(inChar != -1){
 			            //do something with the chars...
+			        	inChar = input.read();
 			        }
 			    }
 			}.process("text.txt");
@@ -252,6 +255,7 @@ public class BufferedInputStreamClass {
 						int inChar = input.read();
 						while(inChar != -1) {
 							//do something with the chars...
+							inChar = input.read();
 						}
 					}			    	
 			    });

@@ -1,10 +1,15 @@
 package C_Advance.C_JavaInputOutput;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 
 import C_Advance.C_JavaInputOutput.A_OutputStream.BufferedOutputStreamClass;
+import C_Advance.C_JavaInputOutput.A_OutputStream.ByteArrayOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.FileOutputStreamClass;
+import C_Advance.C_JavaInputOutput.B_InputStream.BufferedInputStreamClass;
+import C_Advance.C_JavaInputOutput.B_InputStream.ByteArrayInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
+import C_Advance.C_JavaInputOutput.B_InputStream.SequenceInputStreamClass;
 
 public class _JavaIO {
 
@@ -110,11 +115,23 @@ public class _JavaIO {
 	    
 	    BufferedOutputStreamClass bufferedOutputStreamClass = new BufferedOutputStreamClass();
 	    bufferedOutputStreamClass.bufferedOutputStream();
+	    
+	    ByteArrayOutputStreamClass byteArrayOutputStreamClass = new ByteArrayOutputStreamClass();
+	    byteArrayOutputStreamClass.byteArrayOutputStream();
 	}
 	 
 	public void inputStream() throws IOException {
 		
 		FileInputStreamClass fileInputStreamClass = new FileInputStreamClass();
 		fileInputStreamClass.fileInputStream();
+		
+		BufferedInputStreamClass bufferedInputStreamClass = new BufferedInputStreamClass();
+		bufferedInputStreamClass.bufferedInputStream();
+		
+		SequenceInputStreamClass sequenceInputStreamClass = new SequenceInputStreamClass();
+		sequenceInputStreamClass.sequenceInputStream();
+		
+		ByteArrayInputStreamClass arrayInputStreamClass = new ByteArrayInputStreamClass();
+		arrayInputStreamClass.byteArrayInputStream();
 	}
 }
