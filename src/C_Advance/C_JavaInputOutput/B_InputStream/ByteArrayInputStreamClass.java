@@ -108,5 +108,14 @@ public class ByteArrayInputStreamClass {
         data = byteArrayInputStream.read();  // read 'd'
         data = byteArrayInputStream.read();  // read 'e'
         data = byteArrayInputStream.read();  // read 'f'
+        
+        /*
+         * skip()
+         * The Java ByteArrayInputStream skip() method enables you to skip over a number of bytes 
+         * from the underlying byte array. You pass as parameter the number of characters you want 
+         * to skip over. Here is an example of skipping over a number of bytes using the 
+         * ByteArrayInputStream skip() method:
+         */
+        byteArrayInputStream.skip(20);        
 	}
 }
