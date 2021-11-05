@@ -9,6 +9,7 @@ import C_Advance.C_JavaInputOutput.A_OutputStream.DataOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.FileOutputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.BufferedInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.ByteArrayInputStreamClass;
+import C_Advance.C_JavaInputOutput.B_InputStream.DataInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.SequenceInputStreamClass;
 
@@ -137,5 +138,8 @@ public class _JavaIO {
 		
 		ByteArrayInputStreamClass arrayInputStreamClass = new ByteArrayInputStreamClass();
 		arrayInputStreamClass.byteArrayInputStream();
+		
+		DataInputStreamClass dataInputStreamClass = new DataInputStreamClass();
+		dataInputStreamClass.dataInputStream();
 	}
 }

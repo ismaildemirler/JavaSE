@@ -5,6 +5,7 @@ import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class DataInputStreamClass {
 
@@ -107,14 +108,27 @@ public class DataInputStreamClass {
 
         dataInputStream.close();
 
-        System.out.println("int123     = " + int123);
-        System.out.println("float12345 = " + float12345);
-        System.out.println("long789    = " + long789);
+        System.out.println("DataInputStream int123     = " + int123);
+        System.out.println("DataInputStream float12345 = " + float12345);
+        System.out.println("DataInputStream long789    = " + long789);
         System.out.println("***************************************");
         
         /*
          * This example first creates a DataOutputStream and then writes an int, float and a long value to a file. 
          * Second the example creates a DataInputStream which reads the int, float and long value in from the same file.
          */
+        
+        InputStream input = new FileInputStream("text.txt");  
+        DataInputStream inst = new DataInputStream(input);  
+        int count = input.available();  
+        byte[] ary = new byte[count];  
+        inst.read(ary);  
+        System.out.println("DataInputStream : ");
+        for (byte bt : ary) {  
+          char k = (char) bt;  
+          System.out.print(k + " - ");  
+        }  
+        System.out.println("");
+        System.out.println("***************************************");
 	}
 }
