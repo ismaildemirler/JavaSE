@@ -15,9 +15,14 @@ import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.SequenceInputStreamClass;
 import C_Advance.C_JavaInputOutput.C_Writer.BufferedWriterClass;
 import C_Advance.C_JavaInputOutput.C_Writer.FileWriterClass;
+import C_Advance.C_JavaInputOutput.C_Writer.PrintWriterClass;
+import C_Advance.C_JavaInputOutput.C_Writer.StringWriterClass;
 import C_Advance.C_JavaInputOutput.C_Writer._WriterClass;
 import C_Advance.C_JavaInputOutput.D_Reader.BufferedReaderClass;
 import C_Advance.C_JavaInputOutput.D_Reader.FileReaderClass;
+import C_Advance.C_JavaInputOutput.D_Reader.InputStreamReaderClass;
+import C_Advance.C_JavaInputOutput.D_Reader.PrintStreamClass;
+import C_Advance.C_JavaInputOutput.D_Reader.StringReaderClass;
 import C_Advance.C_JavaInputOutput.D_Reader._ReaderClass;
 
 public class _JavaIO {
@@ -162,6 +167,12 @@ public class _JavaIO {
 		
 		BufferedWriterClass bufferedWriterClass = new BufferedWriterClass();
 		bufferedWriterClass.bufferedWriter();
+		
+		PrintWriterClass printWriterClass = new PrintWriterClass();
+		printWriterClass.printWriter();
+		
+		StringWriterClass stringWriterClass = new StringWriterClass();
+		stringWriterClass.stringWriter();
 	}
 	
 	public void reader() throws IOException {
@@ -173,5 +184,14 @@ public class _JavaIO {
 		
 		BufferedReaderClass bufferedReaderClass = new BufferedReaderClass();
 		bufferedReaderClass.bufferedReader();
+		
+		PrintStreamClass printStreamClass = new PrintStreamClass();
+		printStreamClass.printStream();
+		
+		InputStreamReaderClass inputStreamReaderClass = new InputStreamReaderClass();
+		inputStreamReaderClass.inputStreamReader();
+		
+		StringReaderClass stringReaderClass = new StringReaderClass();
+		stringReaderClass.stringReader();
 	}
 }

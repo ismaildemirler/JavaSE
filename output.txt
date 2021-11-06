@@ -1,2 +1,7 @@
-This is a sample sentence for BufferedWriter
-This is second line
+2016
+Hello Java
+Welcome to Java
+true
+123
+123.456
+19
