@@ -56,17 +56,17 @@ public class DataInputStreamClass {
 		DataInputStream dataInputStream1 = new DataInputStream(
                 new FileInputStream("data.bin"));
 
-		boolean myBoolean = dataInputStream1.readBoolean();
-		byte myByte = dataInputStream1.readByte();
-		int myUnsignedByte = dataInputStream1.readUnsignedByte();
-		double myDouble = dataInputStream1.readDouble();
-		float myFloat = dataInputStream1.readFloat();
-		short myShort = dataInputStream1.readShort();
-		char myChar = dataInputStream1.readChar();
-		int myUnsignedShort = dataInputStream1.readUnsignedShort();
-		int myInt = dataInputStream1.readInt();
-		long myLong = dataInputStream1.readLong();
-		String myString = dataInputStream1.readUTF();
+//		boolean myBoolean = dataInputStream1.readBoolean();
+//		byte myByte = dataInputStream1.readByte();
+//		int myUnsignedByte = dataInputStream1.readUnsignedByte();
+//		double myDouble = dataInputStream1.readDouble();
+//		float myFloat = dataInputStream1.readFloat();
+//		short myShort = dataInputStream1.readShort();
+//		char myChar = dataInputStream1.readChar();
+//		int myUnsignedShort = dataInputStream1.readUnsignedShort();
+//		int myInt = dataInputStream1.readInt();
+//		long myLong = dataInputStream1.readLong();
+//		String myString = dataInputStream1.readUTF();
 		//etc.
 		
 		dataInputStream1.close();

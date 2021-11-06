@@ -7,11 +7,18 @@ import C_Advance.C_JavaInputOutput.A_OutputStream.BufferedOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.ByteArrayOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.DataOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.FileOutputStreamClass;
+import C_Advance.C_JavaInputOutput.A_OutputStream.FilterOutputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.BufferedInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.ByteArrayInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.DataInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.SequenceInputStreamClass;
+import C_Advance.C_JavaInputOutput.C_Writer.BufferedWriterClass;
+import C_Advance.C_JavaInputOutput.C_Writer.FileWriterClass;
+import C_Advance.C_JavaInputOutput.C_Writer._WriterClass;
+import C_Advance.C_JavaInputOutput.D_Reader.BufferedReaderClass;
+import C_Advance.C_JavaInputOutput.D_Reader.FileReaderClass;
+import C_Advance.C_JavaInputOutput.D_Reader._ReaderClass;
 
 public class _JavaIO {
 
@@ -123,6 +130,9 @@ public class _JavaIO {
 	    
 	    DataOutputStreamClass dataOutputStreamClass = new DataOutputStreamClass();
 	    dataOutputStreamClass.dataOutputStream();
+	    
+	    FilterOutputStreamClass filterOutputStreamClass = new FilterOutputStreamClass();
+	    fileOutputStreamClass.fileOutputStream();
 	}
 	 
 	public void inputStream() throws IOException {
@@ -141,5 +151,27 @@ public class _JavaIO {
 		
 		DataInputStreamClass dataInputStreamClass = new DataInputStreamClass();
 		dataInputStreamClass.dataInputStream();
+	}
+
+	public void writer() throws IOException {
+		_WriterClass writerClass = new _WriterClass();
+		writerClass.writer();
+		
+		FileWriterClass fileWriterClass = new FileWriterClass();
+		fileWriterClass.fileWriter();
+		
+		BufferedWriterClass bufferedWriterClass = new BufferedWriterClass();
+		bufferedWriterClass.bufferedWriter();
+	}
+	
+	public void reader() throws IOException {
+		_ReaderClass readerClass = new _ReaderClass();
+		readerClass.reader();
+		
+		FileReaderClass fileReaderClass = new FileReaderClass();
+		fileReaderClass.fileReader();
+		
+		BufferedReaderClass bufferedReaderClass = new BufferedReaderClass();
+		bufferedReaderClass.bufferedReader();
 	}
 }
