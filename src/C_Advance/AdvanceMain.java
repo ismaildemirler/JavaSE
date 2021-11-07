@@ -86,6 +86,7 @@ public class AdvanceMain {
 		_JavaIO io = new _JavaIO();
 		try {
 			io.javaIO();
+			io.file();
 			io.outputStream();
 			io.inputStream();
 			io.writer();

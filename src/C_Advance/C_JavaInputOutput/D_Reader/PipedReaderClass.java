@@ -1,5 +1,6 @@
 package C_Advance.C_JavaInputOutput.D_Reader;
 
+import java.io.IOException;
 import java.io.PipedReader;
 import java.io.PipedWriter;
 
@@ -18,7 +19,7 @@ public class PipedReaderClass {
 	 * are used by different threads. Only one PipedReader can be connected to the same PipedWriter.
 	 */
 	
-	public void pipedReader() {
+	public void pipedReader() throws IOException {
 		
 		/*
 		 * Constructor

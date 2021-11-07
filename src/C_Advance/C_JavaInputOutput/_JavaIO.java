@@ -12,6 +12,7 @@ import C_Advance.C_JavaInputOutput.B_InputStream.BufferedInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.ByteArrayInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.DataInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.FileInputStreamClass;
+import C_Advance.C_JavaInputOutput.B_InputStream.PushbackInputStreamClass;
 import C_Advance.C_JavaInputOutput.B_InputStream.SequenceInputStreamClass;
 import C_Advance.C_JavaInputOutput.C_Writer.BufferedWriterClass;
 import C_Advance.C_JavaInputOutput.C_Writer.FileWriterClass;
@@ -59,6 +60,8 @@ public class _JavaIO {
 		System.out.println("Simple Message");  
 		System.err.println("Error Message");  	
 		
+		System.out.println("***************************");
+		
 		/*
 		 * Let's see the code to get input from console.
 		 */
@@ -70,6 +73,8 @@ public class _JavaIO {
 			e.printStackTrace();
 		} //returns ASCII code of 1st character  
 		System.out.println("Your character: " + (char)i); //will print the character  
+
+		System.out.println("***************************");
 		
 		/*
 		 * OutputStream and InputStream
@@ -124,6 +129,12 @@ public class _JavaIO {
 		 */
 	}
 
+	public void file() throws IOException {
+		FileClass fileClass = new FileClass();
+		fileClass.file();
+		fileClass.fileDescriptor();
+	}
+	
 	public void outputStream() throws IOException {
 		
 		FileOutputStreamClass fileOutputStreamClass = new FileOutputStreamClass();
@@ -142,7 +153,7 @@ public class _JavaIO {
 	    fileOutputStreamClass.fileOutputStream();
 	}
 	 
-	public void inputStream() throws IOException {
+ 	public void inputStream() throws IOException {
 		
 		FileInputStreamClass fileInputStreamClass = new FileInputStreamClass();
 		fileInputStreamClass.fileInputStream();
@@ -158,6 +169,9 @@ public class _JavaIO {
 		
 		DataInputStreamClass dataInputStreamClass = new DataInputStreamClass();
 		dataInputStreamClass.dataInputStream();
+		
+		PushbackInputStreamClass pushbackInputStreamClass = new PushbackInputStreamClass();
+		pushbackInputStreamClass.pushbackInputStream();
 	}
 
 	public void writer() throws IOException {
