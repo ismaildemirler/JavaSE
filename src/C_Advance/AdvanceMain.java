@@ -91,6 +91,8 @@ public class AdvanceMain {
 			io.inputStream();
 			io.writer();
 			io.reader();
+			io.objectStreamClass();
+			io.objectStreamFieldClass();
 		} catch (IOException e) {
 			System.out.println("Error: " + e.getMessage()); 
 		}

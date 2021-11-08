@@ -2,6 +2,8 @@ package C_Advance.C_JavaInputOutput;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.ObjectStreamClass;
+import java.util.Calendar;
 
 import C_Advance.C_JavaInputOutput.A_OutputStream.BufferedOutputStreamClass;
 import C_Advance.C_JavaInputOutput.A_OutputStream.ByteArrayOutputStreamClass;
@@ -215,5 +217,175 @@ public class _JavaIO {
 		
 		PipedReaderClass pipedReaderClass = new PipedReaderClass();
 		pipedReaderClass.pipedReader();
+	}
+
+	public void objectStreamClass() throws IOException {
+		
+		/*
+		 * Java - ObjectStreamClass 
+		 * 
+		 * ObjectStreamClass act as a Serialization descriptor for class. 
+		 * This class contains the name and serialVersionUID of the class.
+		 */
+		
+		/*
+		 * Fields
+		 * 
+		 * static ObjectStreamField[]
+		 * serialPersistentFields value indicating no serializable fields
+		 */
+		
+		/*
+		 * Methods 
+		 * 
+		 * Class<?>	forClass()	
+		 * It returns the class in the local VM that this version is mapped to.
+		 * 
+		 * ObjectStreamField getField(String name)	
+		 * It gets the field of this class by name.
+		 * 
+		 * ObjectStreamField[] getFields()	
+		 * It returns an array of the fields of this serialization class.
+		 * 
+		 * String getName() 
+		 * It returns the name of the class described by this descriptor.
+		 * 
+		 * long	getSerialVersionUID()	
+		 * It returns the serialVersionUID for this class.
+		 * 
+		 * Static ObjectStreamClass	lookup(Class<?> cl)	
+		 * It finds the descriptor for a class that can be serialized.
+		 * 
+		 * Static ObjectStreamClass	lookupAny(Class<?> cl)	
+		 * It returns the descriptor for any class, regardless of whether it implements Serializable.
+		 * 
+		 * String toString()	
+		 * It returns a string describing this ObjectStreamClass.
+		 */
+		
+		// create a new object stream class for Integers  
+        ObjectStreamClass osc = ObjectStreamClass.lookup(SmartPhone.class);  
+  
+        // get the value field from ObjectStreamClass for integers  
+        System.out.println("" + osc.getField("price"));  
+  
+        // create a new object stream class for Calendar  
+        ObjectStreamClass osc2 = ObjectStreamClass.lookup(String.class);  
+  
+        // get the Class instance for osc2  
+        System.out.println("Hash Field Of String Class : " + osc2.getField("hash"));  
+	}
+
+	public void objectStreamFieldClass() throws IOException {
+		
+		/*
+		 * Java ObjectStreamField class
+		 * 
+		 * A description of a Serializable field from a Serializable class. An array of ObjectStreamFields 
+		 * is used to declare the Serializable fields of a class. The java.io.ObjectStreamClass.getField(String name) 
+		 * method gets the field of this class by name.
+		 */
+		
+		/*
+		 * Constructors
+		 * 
+		 * ObjectStreamField(String name, Class<?> type)	
+		 * It creates a Serializable field with the specified type.
+		 * 
+		 * ObjectStreamField(String name, Class<?> type, boolean unshared)	
+		 * It creates an ObjectStreamField representing a serializable field with the given name and type.
+		 */
+		
+		/*
+		 * Methods
+		 * 
+		 * int compareTo(Object obj)	
+		 * It compares this field with another ObjectStreamField.
+		 * 
+		 * String getName()	
+		 * It gets the name of this field.
+		 * 
+		 * int GetOffset()	
+		 * Offset of field within instance data.
+		 * 
+		 * Class<?>	getType()	
+		 * It get the type of the field.
+		 * 
+		 * char	getTypeCode()	
+		 * It returns character encoding of field type.
+		 * 
+		 * String getTypeString()	
+		 * It return the JVM type signature.
+		 * 
+		 * boolean isPrimitive()	
+		 * It return true if this field has a primitive type.
+		 * 
+		 * boolean isUnshared()	
+		 * It returns boolean value indicating whether or not the serializable field represented by this ObjectStreamField instance is unshared.
+		 * 
+		 * protected void setOffset(int offset)	
+		 * Offset within instance data.
+		 * 
+		 * String toString()	
+		 * It return a string that describes this field.
+		 */
+		
+		/*
+		 * public char getTypeCode()
+		 * Returns character encoding of field type. The encoding is as follows:
+		 * 
+		 * B	byte
+		 * C	char
+		 * D	double
+		 * F	float
+		 * I	int
+		 * J	long
+		 * L	class or interface
+		 * S	short
+		 * Z	boolean
+		 * [	array
+		 * 
+		 * Returns:
+		 * the typecode of the serializable field
+		 */
+		
+		// create a new object stream class for Integers  
+        ObjectStreamClass osc = ObjectStreamClass.lookup(String.class);  
+
+        // get the value field from ObjectStreamClass for integers  
+        System.out.println("" + osc.getField("value"));  
+
+        // create a new object stream class for Calendar  
+        ObjectStreamClass osc2 = ObjectStreamClass.lookup(Calendar.class);  
+
+        // get the Class instance for osc2  
+        System.out.println("" + osc2.getField("isTimeSet"));  
+	}
+	
+	public class SmartPhone {
+		private int price;
+		private String name;
+		
+		public SmartPhone(int price, String name) {
+			super();
+			this.price = price;
+			this.name = name;
+		}
+
+		public int getPrice() {
+			return price;
+		}
+
+		public void setPrice(int price) {
+			this.price = price;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
 	}
 }
