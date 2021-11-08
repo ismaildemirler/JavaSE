@@ -4,7 +4,10 @@ import java.io.File;
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.FilePermission;
 import java.io.IOException;
+import java.io.RandomAccessFile;
+import java.security.PermissionCollection;
 
 public class FileClass {
 
@@ -422,6 +425,131 @@ public class FileClass {
         System.out.println("*************************************");
 	}
 
+	public void filePermission() throws IOException {
+		
+		/*
+		 * Java FilePermission class contains the permission related to a directory or file. 
+		 * All the permissions are related with path. The path can be of two types:
+		   1) D:\\IO\\-: It indicates that the permission is associated with all sub directories and files recursively.
+		   2) D:\\IO\\*: It indicates that the permission is associated with all directory and files within this 
+		   	  directory excluding sub directories.
+		   	  
+		 * public final class FilePermission extends Permission implements Serializable  
+		 */
+		
+		/*
+		 * Methods of FilePermission class 
+		 * 
+		 * ByteArrayOutputStream()	
+		 * Creates a new byte array output stream with the initial capacity of 32 bytes, though its size increases if necessary.
+		 * 
+		 * ByteArrayOutputStream(int size)	
+		 * Creates a new byte array output stream, with a buffer capacity of the specified size, in bytes.
+		 */
+		
+		/*
+		 * int hashCode()	
+		 * It is used to return the hash code value of an object.
+		 * 
+		 * String getActions()	
+		 * It is used to return the "canonical string representation" of an action.
+		 * 
+		 * boolean equals(Object obj)	
+		 * It is used to check the two FilePermission objects for equality.
+		 * 
+		 * boolean implies(Permission p)	
+		 * It is used to check the FilePermission object for the specified permission.
+		 * 
+		 * PermissionCollection newPermissionCollection()	
+		 * It is used to return the new PermissonCollection object for storing the FilePermission object.
+		 */
+		
+		/*
+		 * Let's see the simple example in which permission of a directory path is granted with read permission 
+		 * and a file of this directory is granted for write permission.
+		 */
+		
+		String srg = "text.txt";  
+        FilePermission file1 = new FilePermission("\\-", "read");  
+        PermissionCollection permission = file1.newPermissionCollection();  
+        permission.add(file1);  
+        FilePermission file2 = new FilePermission(srg, "write");  
+        permission.add(file2);  
+        if(permission.implies(new FilePermission(srg, "read,write"))) {  
+        	System.out.println("Read, Write permission is granted for the path "+srg );  
+        }
+        else {  
+        	System.out.println("No Read, Write permission is granted for the path "+srg);            
+        }
+	}
+	
+	public void randomAccessFile() throws IOException {
+		
+		/*
+		 * Java - RandomAccessFile
+		 * 
+		 * This class is used for reading and writing to random access file. A random access file behaves like a large array
+		 * of bytes. There is a cursor implied to the array called file pointer, by moving the cursor we do the read write 
+		 * operations. If end-of-file is reached before the desired number of byte has been read than EOFException is thrown. 
+		 * It is a type of IOException.
+		 */
+		
+		/*
+		 * Constructor 
+		 * 
+		 * RandomAccessFile(File file, String mode)	
+		 * Creates a random access file stream to read from, and optionally to write to, the file specified by the File argument.
+		 * 
+		 * RandomAccessFile(String name, String mode)	
+		 * Creates a random access file stream to read from, and optionally to write to, a file with the specified name.
+		 */
+		
+		/*
+		 * Methods
+		 * 
+		 * void	close()	
+		 * It closes this random access file stream and releases any system resources associated with the stream.
+		 * 
+		 * FileChannel getChannel()	
+		 * It returns the unique FileChannel object associated with this file.
+		 * 
+		 * int readInt()	
+		 * It reads a signed 32-bit integer from this file.
+		 * 
+		 * String readUTF()	
+		 * It reads in a string from this file.
+		 * 
+		 * void	seek(long pos)	
+		 * It sets the file-pointer offset, measured from the beginning of this file, at which the next read or write occurs.
+		 * 
+		 * void	writeDouble(double v)	
+		 * It converts the double argument to a long using the doubleToLongBits method in class Double, and then writes that long value to the file as an eight-byte quantity, high byte first.
+		 * 
+		 * void	writeFloat(float v)	
+		 * It converts the float argument to an int using the floatToIntBits method in class Float, and then writes that int value to the file as a four-byte quantity, high byte first.
+		 * 
+		 * void	write(int b)	
+		 * It writes the specified byte to this file.
+		 * 
+		 * int read()	
+		 * It reads a byte of data from this file.
+		 * 
+		 * long	length()
+		 * It returns the length of this file.
+		 * 
+		 * void	seek(long pos)	
+		 * It sets the file-pointer offset, measured from the beginning of this file, at which the next read or write occurs.
+		 */
+		
+        System.out.println(new String(readFromFile("text.txt", 0, 18)));  
+        writeToFile("text.txt", "I love my country and my people", 31);   
+        
+        /*
+         * The text.txt contains text "This class is used for reading and writing to random access file." after running the 
+         * program it will contains. This class is used for reading I love my country and my people.
+         */
+	}
+	
 	public boolean deleteDir(File dir){
 	    File[] files = dir.listFiles();
 	    if(files != null){
@@ -435,4 +563,22 @@ public class FileClass {
 	    }
 	    return dir.delete();
 	}
+
+	private byte[] readFromFile(String filePath, int position, int size)  
+            throws IOException {  
+        RandomAccessFile file = new RandomAccessFile(filePath, "r");  
+        file.seek(position);  
+        byte[] bytes = new byte[size];  
+        file.read(bytes);  
+        file.close();  
+        return bytes;  
+    }  
+    
+	private void writeToFile(String filePath, String data, int position)  
+            throws IOException {  
+        RandomAccessFile file = new RandomAccessFile(filePath, "rw");  
+        file.seek(position);  
+        file.write(data.getBytes());  
+        file.close();  
+    }  
 }
