@@ -1,3 +1,4 @@
+
 package A_Beginning.B_Primitives;
 
 public class PrimitiveTypes {

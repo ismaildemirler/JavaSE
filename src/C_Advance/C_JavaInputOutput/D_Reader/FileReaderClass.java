@@ -3,6 +3,7 @@ package C_Advance.C_JavaInputOutput.D_Reader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class FileReaderClass {
 
@@ -53,5 +54,14 @@ public class FileReaderClass {
 		 * You will probably have to experiment with different byte array size and measure read performance, 
 		 * to find the optimal char array size.
 		 */
+         
+         try(Scanner scanner = new Scanner(new FileReader("output.txt"))) {
+        	 System.out.println("Reading by using Scanner : "); 
+             while(scanner.hasNextLine()) {   
+            	 String line = scanner.nextLine();
+            	 System.out.println(line);  
+             }
+             System.out.println("******************************************");
+         } 
 	}
 }

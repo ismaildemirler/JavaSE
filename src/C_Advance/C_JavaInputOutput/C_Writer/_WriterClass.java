@@ -117,5 +117,24 @@ public class _WriterClass {
 		 * hard disk speed and buffer sizes, or network card speed and buffer sizes, depending on which destination 
 		 * the Writer sends its data to.
 		 */
+		
+		/*
+		 * Usage of Try With Resource
+		 * 
+		 * We did not have to use multiple try catch block thanks to try with resource structure. Java handles closing
+		 * closable files which implements from IClosable interface.
+		 */
+		try(FileWriter fileWriter = new FileWriter("text.txt")) {
+			fileWriter.write("Example String");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		try(FileWriter fileWriter1 = new FileWriter("text.txt");
+		    FileWriter fileWriter2 = new FileWriter("output.txt")) {
+			fileWriter1.write("Example String");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
