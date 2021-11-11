@@ -19,7 +19,7 @@ import C_Advance.C_JavaInputOutput._JavaIO;
 
 public class AdvanceMain {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ClassNotFoundException {
 		
 //		_ArrayList arrayList = new _ArrayList();
 //		arrayList.moreAboutArrayList();
@@ -91,6 +91,7 @@ public class AdvanceMain {
 			io.inputStream();
 			io.writer();
 			io.reader();
+			io.serialization();
 			io.objectStreamClass();
 			io.objectStreamFieldClass();
 		} catch (IOException e) {

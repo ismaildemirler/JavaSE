@@ -29,6 +29,7 @@ import C_Advance.C_JavaInputOutput.D_Reader.PipedReaderClass;
 import C_Advance.C_JavaInputOutput.D_Reader.PrintStreamClass;
 import C_Advance.C_JavaInputOutput.D_Reader.StringReaderClass;
 import C_Advance.C_JavaInputOutput.D_Reader._ReaderClass;
+import C_Advance.C_JavaInputOutput.E_Serialization._Serialization;
 
 public class _JavaIO {
 
@@ -219,6 +220,13 @@ public class _JavaIO {
 		pipedReaderClass.pipedReader();
 	}
 
+	public void serialization() throws IOException, ClassNotFoundException {
+		
+		_Serialization serialization = new _Serialization();
+		serialization.serialization();
+		serialization.deserialization();
+	}
+	
 	public void objectStreamClass() throws IOException {
 		
 		/*
