@@ -7,8 +7,11 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class _Serialization {
+public class _Serialization implements Serializable{
 
 	/*
 	 * Serialization and Deserialization in Java
@@ -36,6 +39,14 @@ public class _Serialization {
 		 *          <-----------
 		 *          Deserialization
 		 *          
+		 * We can keep state and properties of the Objects and reuse them after a while by using serialization.
+		 * For example in a game we can save state of the game and continue from there.
+		 * 
+		 * We can transfer objects, datas between two different independent platforms by using serialization.
+		 * 
+		 * The objects which took a lot of time to create and if we use that objects multiple times after creation
+		 * we don't want to create again and again. Because it takes too much time. So we can serialize this object 
+		 * and keep it and use again and again by using this serialization process.
 		 */
 		
 		/*
@@ -82,11 +93,13 @@ public class _Serialization {
 		 */
 		
 		//Creating the object    
-		Worker worker = new Worker(100, "Ahmet", "Sales", 5000);    
+		Worker worker1 = new Worker(100, "Ahmet", "Sales", 5000);  
+		Worker worker2 = new Worker(101, "Mehmet", "IT", 6500);  
 		//Creating stream and writing the object    
 		FileOutputStream fileOutputStream = new FileOutputStream("f.txt");    
 		ObjectOutputStream outputStream = new ObjectOutputStream(fileOutputStream);    
-		outputStream.writeObject(worker);    
+		outputStream.writeObject(worker1);    
+		outputStream.writeObject(worker2);  
 		outputStream.flush();      
 		outputStream.close(); 
 		
@@ -153,10 +166,25 @@ public class _Serialization {
 		 * will be thrown when you deserialize the object. We can also declare our own SerialVersionUID 
 		 * in the Serializable class. To do so, you need to create a field SerialVersionUID and assign 
 		 * a value to it. It must be of the long type with static and final. It is suggested to explicitly 
-		 * declare the serialVersionUID field in the class and have it private also. For example:
+		 * declare the serialVersionUID field in  the class and have it private also. For example:
 		 * 
 		 * private static final long serialVersionUID = 1L;
 		 */		
+		
+		/*
+		 * Serialize Arrays and Collections
+		 */
+		Student student1 = new Student(1, "Student1");
+		Student student2 = new Student(2, "Student2");
+		Student student3 = new Student(3, "Student3");
+		
+		Student[] studentArray = { student1, student2, student3 };
+		List<Student> studentList = new ArrayList<Student>(Arrays.asList(studentArray));
+		
+		try(ObjectOutputStream outStream = new ObjectOutputStream(new FileOutputStream("students.txt"))){
+			outStream.writeObject(studentArray);
+			outStream.writeObject(studentList);
+		}
 	}
 	
 	public void deserialization() throws FileNotFoundException, IOException, ClassNotFoundException {
@@ -169,13 +197,26 @@ public class _Serialization {
 		 * Let's see an example where we are reading the data from a deserialized object.
 		 */
 		
-		//Creating stream to read the object  
-		ObjectInputStream in = new ObjectInputStream(new FileInputStream("f.txt"));  
-		Student student = (Student)in.readObject();  
-		//printing the data of the serialized object  
-		System.out.println(student.id + " " + student.name);  
-		//closing the stream  
-		in.close();  
+		//Creating stream to read the object 
+		try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("f.txt"))){			  
+			Worker worker1 = (Worker)in.readObject(); 
+			Worker worker2 = (Worker)in.readObject(); 
+			//printing the data of the serialized object  
+			System.out.println("Worker 1 : " + worker1.department + " " + worker1.salary);  
+			System.out.println("Worker 2 : " + worker2.department + " " + worker2.salary);  
+		}
+		
+		System.out.println("***********************************************************");
+		
+		try(ObjectInputStream in = new ObjectInputStream(new FileInputStream("students.txt"))){
+			Student[] studentArray = (Student[])in.readObject();
+			ArrayList<Student> students = (ArrayList<Student>) in.readObject();
+			System.out.println("Serialized Students: ");
+			for (Student student : students) {
+				System.out.println(student);
+			}
+			System.out.println("***************************************************");
+		}
 	}
 	
 	public void transientKeyword() throws IOException, ClassNotFoundException {
@@ -257,6 +298,11 @@ public class _Serialization {
 		public Student(int id, String name) {  
 			this.id = id;  
 			this.name = name;  
+		}
+
+		@Override
+		public String toString() {
+			return "Student [id=" + id + ", name=" + name + "]";
 		}  
 	}  
 	

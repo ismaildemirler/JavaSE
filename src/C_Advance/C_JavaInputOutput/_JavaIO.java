@@ -225,6 +225,7 @@ public class _JavaIO {
 		_Serialization serialization = new _Serialization();
 		serialization.serialization();
 		serialization.deserialization();
+		serialization.transientKeyword();
 	}
 	
 	public void objectStreamClass() throws IOException {
