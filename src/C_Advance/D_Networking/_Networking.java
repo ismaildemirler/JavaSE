@@ -136,4 +136,22 @@ public class _Networking {
 	   - URLStreamHandlerFactory
 	   - ProtocolFamily
 	 */
+	
+	public void networking() {
+		
+		URLClass url = new URLClass(); 
+		url.urlClass();
+		
+		URLConnectionClass urlConnectionClass = new URLConnectionClass();
+		urlConnectionClass.urlConnectionClass();
+		
+		HttpURLConnectionClass httpURLConnectionClass = new HttpURLConnectionClass();
+		httpURLConnectionClass.httpUrlConnectionClass();
+		
+		InetAddressClass inetAddressClass = new InetAddressClass();
+		inetAddressClass.inetAddressClass();
+		
+		DatagramSocketClass datagramSocketClass = new DatagramSocketClass();
+		datagramSocketClass.example();
+	}
 }
